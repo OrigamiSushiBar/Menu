@@ -326,7 +326,7 @@ const products = [
         descriptionFR: "Nouilles épaisses dans un bouillon avec des morceaux de poulet",
         descriptionEN: "Thick noodles in a flavorful broth with pieces of chicken",
         price: "11,000 DT",
-        image: "images/9.jpg",
+        image: "images/9.webp",
         category: "entrees",
         subcategory: "soupes",
     },
@@ -374,7 +374,7 @@ const products = [
     {
         reference: "135a",
         nameFR: "Gyozas Poulet",
-        nameEn: "Chicken Gyoza",
+        nameEN: "Chicken Gyoza",
         descriptionFR: "Raviolis japonais grillés, farce au poulet et gingembre (4 pièces)",
         descriptionEN: "Japanese grilled dumplings filled with chicken and ginger (4 pieces)",
         price: "9,000 DT",
