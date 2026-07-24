@@ -371,6 +371,19 @@ const products = [
     },
 
 
+    {
+        reference: "135a",
+        nameFR: "Gyozas Poulet",
+        nameEn: "Chicken Gyoza",
+        descriptionFR: "Raviolis japonais grillés, farce au poulet et gingembre (4 pièces)",
+        descriptionEN: "Japanese grilled dumplings filled with chicken and ginger (4 pieces)",
+        price: "9,000 DT",
+        image: "images/135a.jpg",
+        category: "entrees",
+        subcategory: "gyozas",
+    },
+
+
     
     {
         reference: "193",
