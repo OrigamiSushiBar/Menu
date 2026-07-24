@@ -375,10 +375,36 @@ const products = [
         reference: "135a",
         nameFR: "Gyozas Poulet",
         nameEN: "Chicken Gyoza",
-        descriptionFR: "Raviolis japonais grillés, farce au poulet et gingembre (4 pièces)",
+        descriptionFR: "Raviolis japonais grillés, farcie au poulet et gingembre (4 pièces)",
         descriptionEN: "Japanese grilled dumplings filled with chicken and ginger (4 pieces)",
         price: "9,000 DT",
         image: "images/135a.jpg",
+        category: "entrees",
+        subcategory: "gyozas",
+    },
+
+
+    {
+        reference: "135b",
+        nameFR: "Gyozas Bœuf",
+        nameEN: "Beef Gyoza",
+        descriptionFR: "Raviolis japonais grillés, farcie au bœuf et gingembre (4 pièces)",
+        descriptionEN: "Japanese grilled dumplings filled with beef and ginger (4 pieces)",
+        price: "12,000 DT",
+        image: "images/135b.jpg",
+        category: "entrees",
+        subcategory: "gyozas",
+    },
+
+
+    {
+        reference: "135c",
+        nameFR: "Gyozas Crevette",
+        nameEN: "Shrimp Gyozas",
+        descriptionFR: "Raviolis japonais grillés, farcie aux crevettes et gingembre (4 pièces)",
+        descriptionEN: "Japanese grilled dumplings filled with shrimp and ginger (4 pieces)",
+        price: "14,000 DT",
+        image: "images/135c.jpg",
         category: "entrees",
         subcategory: "gyozas",
     },
