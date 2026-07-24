@@ -410,6 +410,45 @@ const products = [
     },
 
 
+    {
+        reference: "5",
+        nameFR: "Salade d'algues wakame",
+        nameEN: "Wakame Seaweed Salad",
+        descriptionFR: "Algues marines japonaises assaisonnées traditionnellement",
+        descriptionEN: "Traditionally seasoned Japanese seaweed",
+        price: "14,000 DT",
+        image: "images/5.jpg",
+        category: "entrees",
+        subcategory: "salades",
+    },
+
+
+    {
+        reference: "5a",
+        nameFR: "Salade d'algues wakame au poulpe",
+        nameEN: "Wakame Seaweed Salad with Octopus",
+        descriptionFR: "Wakame traditionnel enrichi de poulpe tendre",
+        descriptionEN: "Traditional wakame seaweed with tender octopus",
+        price: "22,000 DT",
+        image: "images/5a.jpg",
+        category: "entrees",
+        subcategory: "salades",
+    },
+
+
+    {
+        reference: "5c",
+        nameFR: "Salade d'algues wakame et anguille",
+        nameEN: "Wakame Seaweed Salad with Eel",
+        descriptionFR: "Wakame aux légumes avec anguille grillée laquée",
+        descriptionEN: "Wakame seaweed with vegetables and glazed grilled eel",
+        price: "21,000 DT",
+        image: "images/5c.jpg",
+        category: "entrees",
+        subcategory: "salades",
+    },
+
+
     
     {
         reference: "193",
