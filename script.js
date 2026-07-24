@@ -309,7 +309,7 @@ const products = [
     {
         reference: "8",
         nameFR: "Soupe miso",
-        nameEn: "Miso soup",
+        nameEN: "Miso soup",
         descriptionFR: "Bouillon traditionnel Japonais à base de pate miso",
         descriptionEN: "Traditional Japanese broth made from miso paste",
         price: "8,000 DT",
@@ -322,7 +322,7 @@ const products = [
     {
         reference: "9",
         nameFR: "Soupe aux nouilles udon poulet",
-        nameEn: "Chicken Udon Noodle Soup",
+        nameEN: "Chicken Udon Noodle Soup",
         descriptionFR: "Nouilles épaisses dans un bouillon avec des morceaux de poulet",
         descriptionEN: "Thick noodles in a flavorful broth with pieces of chicken",
         price: "11,000 DT",
@@ -335,7 +335,7 @@ const products = [
     {
         reference: "10",
         nameFR: "Soupe miso aux nouilles crevette tempura",
-        nameEn: "Miso Noodle Soup with Tempura Shrimp",
+        nameEN: "Miso Noodle Soup with Tempura Shrimp",
         descriptionFR: "Bouillon miso aux nouilles avec une crevette panée croustillante",
         descriptionEN: "Miso broth with noodles topped with a crispy breaded shrimp",
         price: "14,000 DT",
@@ -348,7 +348,7 @@ const products = [
     {
         reference: "10a",
         nameFR: "Soupe miso au poulpe",
-        nameEn: "Octopus Miso Soup",
+        nameEN: "Octopus Miso Soup",
         descriptionFR: "Bouillon miso enrichi de morceaux de poulpe tendre",
         descriptionEN: "Miso broth enriched with tender pieces of octopus",
         price: "14,000 DT",
@@ -361,11 +361,11 @@ const products = [
     {
         reference: "10b",
         nameFR: "Soupe miso au poisson",
-        nameEn: "Fish Miso Soup",
+        nameEN: "Fish Miso Soup",
         descriptionFR: "Bouillon miso à la daurade",
         descriptionEN: "Miso Broth with Sea Bream",
         price: "13,000 DT",
-        image: "images/10b",
+        image: "images/10b.jpg",
         category: "entrees",
         subcategory: "soupes",
     },
@@ -445,66 +445,6 @@ const products = [
         category: "plats-chauds",
         subcategory: "yakitori"
     },
-
-
-    {
-        reference: "198",
-        nameFR: "Gyoza Poulet",
-        nameEN: "Chicken Gyoza",
-        descriptionFR:
-            "Raviolis japonais au poulet, légèrement croustillants.",
-        descriptionEN:
-            "Japanese chicken dumplings, lightly crispy.",
-        price: "14 DT",
-        image: "images/198.jpg",
-        category: "plats-chauds",
-        subcategory: "gyoza"
-    },
-
-
-    {
-        reference: "201",
-        nameFR: "Nigiri Saumon",
-        nameEN: "Salmon Nigiri",
-        descriptionFR:
-            "Tranche de saumon frais déposée sur un riz vinaigré japonais.",
-        descriptionEN:
-            "Fresh salmon served over seasoned Japanese sushi rice.",
-        price: "12 DT",
-        image: "images/201.jpg",
-        category: "sushi",
-        subcategory: "nigiri"
-    },
-
-
-    {
-        reference: "202",
-        nameFR: "Nigiri Thon",
-        nameEN: "Tuna Nigiri",
-        descriptionFR:
-            "Tranche de thon frais déposée sur un riz vinaigré japonais.",
-        descriptionEN:
-            "Fresh tuna served over seasoned Japanese sushi rice.",
-        price: "14 DT",
-        image: "images/202.jpg",
-        category: "sushi",
-        subcategory: "nigiri"
-    },
-
-
-    {
-        reference: "203",
-        nameFR: "Maki Saumon",
-        nameEN: "Salmon Maki",
-        descriptionFR:
-            "Maki au saumon frais roulé dans une feuille de nori.",
-        descriptionEN:
-            "Fresh salmon maki rolls wrapped in nori seaweed.",
-        price: "15 DT",
-        image: "images/203.jpg",
-        category: "maki",
-        subcategory: "maki-classiques"
-    }
 
 
 ];
