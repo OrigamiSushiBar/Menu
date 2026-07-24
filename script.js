@@ -313,7 +313,7 @@ const products = [
         descriptionFR: "Bouillon traditionnel Japonais à base de pate miso",
         descriptionEN: "Traditional Japanese broth made from miso paste",
         price: "8,000 DT",
-        image: "images/8.webp",
+        image: "images/8.jpg",
         category: "entrees",
         subcategory: "soupes",
     },
