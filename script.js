@@ -475,6 +475,58 @@ const products = [
     },
 
 
+    {
+        reference: "1",
+        nameFR: "Tartare de deux saumons au gingembre",
+        nameEN: "Two-Salmon Tartare with Ginger",
+        descriptionFR: "Mélange de saumon frais et fumé, parfumé au gingembre frais",
+        descriptionEN: "A blend of fresh and smoked salmon, flavored with fresh ginger",
+        price: "34,000 DT",
+        image: "images/1.jpg",
+        category: "entrees",
+        subcategory: "tartares",
+    },
+
+
+    {
+        reference: "2",
+        nameFR: "Tuna Tartare with Sesame & Ginger",
+        nameEN: "Tuna Tartare with Sesame & Ginger",
+        descriptionFR: "Thon rouge mariné, graines de sésame et gingembre (selon arrivage)",
+        descriptionEN: "Marinated bluefin tuna with sesame seeds and ginger (subject to availability)",
+        price: "29,000 DT",
+        image: "images/2.jpg",
+        category: "entrees",
+        subcategory: "tartares",
+    },
+
+
+    {
+        reference: "3",
+        nameFR: "Tartare de daurade, mangue, avocat, coriandre, zeste de citron vert",
+        nameEN: "Sea Bream Tartare with Mango, Avocado, Cilantro & Lime Zest",
+        descriptionFR: "Poisson blanc aux saveurs tropicales et herbes fraîches",
+        descriptionEN: "White fish with tropical flavors and fresh herbs",
+        price: "26,000 DT",
+        image: "images/3.jpg",
+        category: "entrees",
+        subcategory: "tartares",
+    },
+
+
+    {
+        reference: "4",
+        nameFR: "Tartare de saumon à l'aneth, avocat et poireau",
+        nameEN: "Salmon Tartare with Dill, Avocado & Leek",
+        descriptionFR: "Saumon frais à l'aneth, avocat et poireau",
+        descriptionEN: "Fresh salmon with dill, avocado & leek",
+        price: "31,000 DT",
+        image: "images/4.jpg",
+        category: "entrees",
+        subcategory: "tartares",
+    },
+
+
     
     {
         reference: "193",
