@@ -68,7 +68,7 @@ const subcategoriesOrder = {
         {
             id: "gyozas",
             fr: "Gyozas",
-            en: "Potstickers"
+            en: "Gyoza"
         },
        
         {
@@ -183,7 +183,7 @@ const subcategoriesOrder = {
             id: "Onigarazu",
             fr: "Onigarzu",
             en: "Onigarazu",
-        },
+        }
 
     ],
 
@@ -230,7 +230,7 @@ const subcategoriesOrder = {
             id: "donburi",
             fr: "Donburi",
             en: "Donburi"
-        },
+        }
 
     ],
 
@@ -245,10 +245,10 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "menus-maki",
-            fr: "Menus Maki",
-            en: "Maki Sets"
-        },
+            id: "sauces",
+            fr: "Sauces",
+            en: "Sauces"
+        }
 
     ],
 
@@ -257,9 +257,15 @@ const subcategoriesOrder = {
     "desserts": [
 
         {
-            id: "desserts",
-            fr: "Desserts",
-            en: "Desserts"
+            id: "glaces",
+            fr: "Glaces",
+            en: "Ice Cream"
+        },
+       
+        {
+            id: "fondants",
+            fr: "Fondants",
+            en: "Lava Cakes",
         }
 
     ],
@@ -269,21 +275,9 @@ const subcategoriesOrder = {
     "boissons": [
 
         {
-            id: "softs",
-            fr: "Softs",
-            en: "Soft Drinks"
-        },
-
-        {
-            id: "eaux",
-            fr: "Eaux",
-            en: "Water"
-        },
-
-        {
-            id: "jus",
-            fr: "Jus",
-            en: "Juices"
+            id: "boisson",
+            fr: "Boissons",
+            en: "Drinks"
         }
 
     ]
@@ -312,210 +306,203 @@ const subcategoriesOrder = {
 
 const products = [
 
+    {
+        reference: "8",
+        nameFR: "Soupe miso",
+        nameEn: "Miso soup",
+        descriptionFR: "Bouillon traditionnel Japonais à base de pate miso",
+        descriptionEN: "Traditional Japanese broth made from miso paste",
+        price: "8,000 DT",
+        image: "images/8.jpg",
+        category: "entrees",
+        subcategory: "soupes",
+    },
+
+   
+    {
+        reference: "9",
+        nameFR: "Soupe aux nouilles udon poulet",
+        nameEn: "Chicken Udon Noodle Soup",
+        descriptionFR: "Nouilles épaisses dans un bouillon avec des morceaux de poulet",
+        descriptionEN: "Thick noodles in a flavorful broth with pieces of chicken",
+        price: "11,000 DT",
+        image: "images/9.jpg",
+        category: "entrees",
+        subcategory: "soupes",
+    },
+
 
     {
+        reference: "10",
+        nameFR: "Soupe miso aux nouilles crevette tempura",
+        nameEn: "Miso Noodle Soup with Tempura Shrimp",
+        descriptionFR: "Bouillon miso aux nouilles avec une crevette panée croustillante",
+        descriptionEN: "Miso broth with noodles topped with a crispy breaded shrimp",
+        price: "14,000 DT",
+        image: "images/10.jpg",
+        category: "entrees",
+        subcategory: "soupes",
+    },
+
+
+    {
+        reference: "10a",
+        nameFR: "Soupe miso au poulpe",
+        nameEn: "Octopus Miso Soup",
+        descriptionFR: "Bouillon miso enrichi de morceaux de poulpe tendre",
+        descriptionEN: "Miso broth enriched with tender pieces of octopus",
+        price: "14,000 DT",
+        image: "images/10a.jpg",
+        category: "entrees",
+        subcategory: "soupes",
+    },
+
+
+    {
+        reference: "10b",
+        nameFR: "Soupe miso au poisson",
+        nameEn: "Fish Miso Soup",
+        descriptionFR: "Bouillon miso à la daurade",
+        descriptionEN: "Miso Broth with Sea Bream",
+        price: "13,000 DT",
+        image: "images/10b",
+        category: "entrees",
+        subcategory: "soupes",
+    },
+
+
+    
+    {
         reference: "193",
-
         nameFR: "Kushikatsu Bœuf Fromage",
-
         nameEN: "Beef Cheese Kushikatsu",
-
         descriptionFR:
             "Bœuf pané et fromage fondant, servi avec une sauce maison.",
-
         descriptionEN:
             "Breaded beef and melted cheese, served with homemade sauce.",
-
-        price: "18 DT",
-
+        price: "18,000 DT",
         image: "images/193.jpg",
-
         category: "plats-chauds",
-
         subcategory: "kushikatsu"
     },
 
 
     {
         reference: "194",
-
         nameFR: "Kushikatsu Poulet",
-
         nameEN: "Chicken Kushikatsu",
-
         descriptionFR:
             "Morceaux de poulet panés et frits à la perfection.",
-
         descriptionEN:
             "Breaded chicken pieces, fried to perfection.",
-
         price: "16 DT",
-
         image: "images/194.jpg",
-
         category: "plats-chauds",
-
         subcategory: "kushikatsu"
     },
 
 
     {
         reference: "195",
-
         nameFR: "Kushikatsu Crevette",
-
         nameEN: "Shrimp Kushikatsu",
-
         descriptionFR:
             "Crevettes panées et croustillantes, accompagnées de leur sauce.",
-
         descriptionEN:
             "Crispy breaded shrimp, served with their sauce.",
-
         price: "20 DT",
-
         image: "images/195.jpg",
-
         category: "plats-chauds",
-
         subcategory: "kushikatsu"
     },
 
 
     {
         reference: "196",
-
         nameFR: "Yakitori Poulet",
-
         nameEN: "Chicken Yakitori",
-
         descriptionFR:
             "Brochettes de poulet grillées et délicatement assaisonnées.",
-
         descriptionEN:
             "Grilled chicken skewers, delicately seasoned.",
-
         price: "15 DT",
-
         image: "images/196.jpg",
-
         category: "plats-chauds",
-
         subcategory: "yakitori"
     },
 
 
     {
         reference: "197",
-
         nameFR: "Yakitori Bœuf",
-
         nameEN: "Beef Yakitori",
-
         descriptionFR:
             "Brochettes de bœuf grillées et savoureuses.",
-
         descriptionEN:
             "Flavorful grilled beef skewers.",
-
         price: "17 DT",
-
         image: "images/197.jpg",
-
         category: "plats-chauds",
-
         subcategory: "yakitori"
     },
 
 
     {
         reference: "198",
-
         nameFR: "Gyoza Poulet",
-
         nameEN: "Chicken Gyoza",
-
         descriptionFR:
             "Raviolis japonais au poulet, légèrement croustillants.",
-
         descriptionEN:
             "Japanese chicken dumplings, lightly crispy.",
-
         price: "14 DT",
-
         image: "images/198.jpg",
-
         category: "plats-chauds",
-
         subcategory: "gyoza"
     },
 
 
     {
         reference: "201",
-
         nameFR: "Nigiri Saumon",
-
         nameEN: "Salmon Nigiri",
-
         descriptionFR:
             "Tranche de saumon frais déposée sur un riz vinaigré japonais.",
-
         descriptionEN:
             "Fresh salmon served over seasoned Japanese sushi rice.",
-
         price: "12 DT",
-
         image: "images/201.jpg",
-
         category: "sushi",
-
         subcategory: "nigiri"
     },
 
 
     {
         reference: "202",
-
         nameFR: "Nigiri Thon",
-
         nameEN: "Tuna Nigiri",
-
         descriptionFR:
             "Tranche de thon frais déposée sur un riz vinaigré japonais.",
-
         descriptionEN:
             "Fresh tuna served over seasoned Japanese sushi rice.",
-
         price: "14 DT",
-
         image: "images/202.jpg",
-
         category: "sushi",
-
         subcategory: "nigiri"
     },
 
 
     {
         reference: "203",
-
         nameFR: "Maki Saumon",
-
         nameEN: "Salmon Maki",
-
         descriptionFR:
             "Maki au saumon frais roulé dans une feuille de nori.",
-
         descriptionEN:
             "Fresh salmon maki rolls wrapped in nori seaweed.",
-
         price: "15 DT",
-
         image: "images/203.jpg",
-
         category: "maki",
-
         subcategory: "maki-classiques"
     }
 
