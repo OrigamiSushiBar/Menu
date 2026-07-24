@@ -326,7 +326,7 @@ const products = [
         descriptionFR: "Nouilles épaisses dans un bouillon avec des morceaux de poulet",
         descriptionEN: "Thick noodles in a flavorful broth with pieces of chicken",
         price: "11,000 DT",
-        image: "images/9.webp",
+        image: "images/9.jpg",
         category: "entrees",
         subcategory: "soupes",
     },
