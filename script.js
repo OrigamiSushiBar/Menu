@@ -449,6 +449,32 @@ const products = [
     },
 
 
+    {
+        reference: "6",
+        nameFR: "Salade sashimis, vinaigrette au miso",
+        nameEN: "Sashimi Salad with Miso Dressing",
+        descriptionFR: "Poissons crus variés sur lit de salade, wakamé, carottes vinaigrette miso maison",
+        descriptionEN: "Assorted raw fish served on a bed of lettuce, wakame seaweed, and carrots with homemade miso dressing",
+        price: "29,000 DT",
+        image: "images/6.jpg",
+        category: "entrees",
+        subcategory: "salades",
+    },
+
+
+    {
+        reference: "7",
+        nameFR: "Salade au saumon tataki, vinaigrette au miso",
+        nameEN: "Tataki Salmon Salad with Miso Dressing",
+        descriptionFR: "Saumon mi-cuit , graines de sésame,sur lit de salade, wakamé, carottes vinaigrette miso maison",
+        descriptionEN: "Seared salmon with sesame seeds, served on a bed of lettuce, wakame seaweed, and carrots with homemade miso dressing",
+        price: "32,000 DT",
+        image: "images/7.jpg",
+        category: "entrees",
+        subcategory: "salades",
+    },
+
+
     
     {
         reference: "193",
