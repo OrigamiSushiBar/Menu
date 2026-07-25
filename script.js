@@ -118,7 +118,7 @@ const subcategoriesOrder = {
             fr: "Gunkan Maki",
             en: "Gunkan Maki",
             titleFR: "Gunkan Maki (2 pièces)",
-            titleEn: "Gunkan Maki (2 pieces)"
+            titleEN: "Gunkan Maki (2 pieces)"
         },
 
         {
@@ -126,7 +126,7 @@ const subcategoriesOrder = {
             fr: "Gunkan Fusion",
             en: "Fusion Gunkan",
             titleFR: "Gunkan Fusion (2 pièces)",
-            titleEN: "Fusion Gunkan (2 pièces)"
+            titleEN: "Fusion Gunkan (2 pieces)"
         },
 
         {
@@ -142,7 +142,7 @@ const subcategoriesOrder = {
             fr: "California Rolls",
             en: "California Rolls",
             titleFR: "California Rolls (4 pièces)",
-            titleEN: "California Rolls (4 pieces)
+            titleEN: "California Rolls (4 pieces)"
         },
 
         {
@@ -209,13 +209,13 @@ const subcategoriesOrder = {
 
         {
             id: "tataki",
-            fr: "Spécialiés Tataki",
+            fr: "Spécialités Tataki",
             en: "Tataki Specials",
         },
 
         {
-            id: "Onigarazu",
-            fr: "Onigarzu",
+            id: "onigarazu",
+            fr: "Onigarazu",
             en: "Onigarazu",
         }
 
@@ -348,7 +348,7 @@ const products = [
         reference: "8",
         nameFR: "Soupe miso",
         nameEN: "Miso soup",
-        descriptionFR: "Bouillon traditionnel Japonais à base de pate miso",
+        descriptionFR: "Bouillon traditionnel Japonais à base de pâte miso",
         descriptionEN: "Traditional Japanese broth made from miso paste",
         price: "8,000 DT",
         image: "images/8.jpg",
@@ -413,7 +413,7 @@ const products = [
         reference: "135a",
         nameFR: "Gyozas Poulet",
         nameEN: "Chicken Gyoza",
-        descriptionFR: "Raviolis japonais grillés, farcie au poulet et gingembre (4 pièces)",
+        descriptionFR: "Raviolis japonais grillés, farcis au poulet et gingembre (4 pièces)",
         descriptionEN: "Japanese grilled dumplings filled with chicken and ginger (4 pieces)",
         price: "9,000 DT",
         image: "images/135a.jpg",
@@ -426,7 +426,7 @@ const products = [
         reference: "135b",
         nameFR: "Gyozas Bœuf",
         nameEN: "Beef Gyoza",
-        descriptionFR: "Raviolis japonais grillés, farcie au bœuf et gingembre (4 pièces)",
+        descriptionFR: "Raviolis japonais grillés, farcis au bœuf et gingembre (4 pièces)",
         descriptionEN: "Japanese grilled dumplings filled with beef and ginger (4 pieces)",
         price: "12,000 DT",
         image: "images/135b.jpg",
@@ -439,7 +439,7 @@ const products = [
         reference: "135c",
         nameFR: "Gyozas Crevette",
         nameEN: "Shrimp Gyozas",
-        descriptionFR: "Raviolis japonais grillés, farcie aux crevettes et gingembre (4 pièces)",
+        descriptionFR: "Raviolis japonais grillés, farcis aux crevettes et gingembre (4 pièces)",
         descriptionEN: "Japanese grilled dumplings filled with shrimp and ginger (4 pieces)",
         price: "14,000 DT",
         image: "images/135c.jpg",
