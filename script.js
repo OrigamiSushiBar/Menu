@@ -1389,38 +1389,58 @@ function renderSubcategories() {
    SCROLL VERS UNE SOUS-CATÉGORIE
    ========================================================= */
 
-function scrollToElement(
-    element
-) {
+function scrollToElement(element) {
+
+    const header =
+        document.querySelector(".site-header");
+
+    const categoryNavigation =
+        document.querySelector(".category-navigation");
+
+    const subcategoryNavigation =
+        document.querySelector(".subcategory-navigation");
 
 
-    const offset =
-        subcategoryNavigation.offsetHeight;
+    const headerHeight =
+        header
+            ? header.getBoundingClientRect().height
+            : 0;
+
+
+    const categoryNavigationHeight =
+        categoryNavigation
+            ? categoryNavigation.getBoundingClientRect().height
+            : 0;
+
+
+    const subcategoryNavigationHeight =
+        subcategoryNavigation
+            ? subcategoryNavigation.getBoundingClientRect().height
+            : 0;
+
+
+    const totalOffset =
+        headerHeight +
+        categoryNavigationHeight +
+        subcategoryNavigationHeight +
+        10;
 
 
     const elementPosition =
+        element.getBoundingClientRect().top +
+        window.scrollY;
 
-        element.getBoundingClientRect().top;
 
-
-    const offsetPosition =
-
-        elementPosition +
-
-        window.pageYOffset -
-
-        offset -
-
-        10;
+    const targetPosition =
+        elementPosition -
+        totalOffset;
 
 
     window.scrollTo({
 
-        top:
-            offsetPosition,
+        top: targetPosition,
 
-        behavior:
-            "smooth"
+        behavior: "smooth"
 
     });
 
