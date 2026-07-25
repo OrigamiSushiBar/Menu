@@ -69,8 +69,8 @@ const subcategoriesOrder = {
             id: "gyozas",
             fr: "Gyozas",
             en: "Gyoza",
-            titleFR: "Gyozas (4 Pièces)",
-            titleEN: "Gyoza (4 Pieces)"
+            titleFR: "Gyozas (4 pièces)",
+            titleEN: "Gyoza (4 pieces)"
         },
        
         {
@@ -100,73 +100,105 @@ const subcategoriesOrder = {
         {
             id: "sashimis",
             fr: "Sashimis",
-            en: "Sashimis"
+            en: "Sashimis",
+            titleFR: "Sashimis (3 pièces)",
+            titleEN: "Sashimis (3 pieces)"
         },
        
         {
             id: "nigiris",
             fr: "Nigiris",
             en: "Nigiris",
+            titleFR: "Nigiris (2 pièces)",
+            titleEN: "Nigiris (2 pieces)"
         },
 
         {
             id: "gunkan-maki",
             fr: "Gunkan Maki",
             en: "Gunkan Maki",
+            titleFR: "Gunkan Maki (2 pièces)",
+            titleEn: "Gunkan Maki (2 pieces)"
         },
 
         {
             id: "gunkan-fusion",
             fr: "Gunkan Fusion",
             en: "Fusion Gunkan",
+            titleFR: "Gunkan Fusion (2 pièces)",
+            titleEN: "Fusion Gunkan (2 pièces)"
         },
 
         {
             id: "hosomaki",
             fr: "Hosomaki",
             en: "Hosomaki",
+            titleFR: "Hosomaki (6 pièces)",
+            titleEN: "Hosomaki (6 pieces)"
         },
 
         {
             id: "california-rolls",
             fr: "California Rolls",
             en: "California Rolls",
+            titleFR: "California Rolls (4 pièces)",
+            titleEN: "California Rolls (4 pieces)
         },
 
         {
             id: "futomaki",
             fr: "Futomaki",
             en: "Futomaki",
+            titleFR: "Futomaki (5 pièces)",
+            titleEN: "Futomaki (5 pieces)"
         },
 
         {
             id: "rouleaux-du-chef",
             fr: "Rouleaux Du Chef",
             en: "Chef's Special Rolls",
+            titleFR: "Rouleaux Du Chef (9 pièces)",
+            titleEN: "Chef's Special Rolls (9 pieces)"
         },
 
         {
             id: "green-maki",
             fr: "Green Maki",
             en: "Green Maki",
+            titleFR: "Green Maki (8 pièces)",
+            titleEN: "Green Maki (8 pieces)"
         },
 
         {
             id: "sushi-cake",
             fr: "Sushi Cake",
             en: "Sushi Cake",
+            titleFR: "Sushi Cake (4 pièces)",
+            titleEN: "Sushi Cake (4 pieces)"
         },
 
         {
             id: "sushi-panko",
             fr: "Sushi Panko",
             en: "Sushi Panko",
+            titleFR: "Sushi Panko (4 pièces)",
+            titleEN: "Sushi Panko (4 pieces)"
         },
 
         {
             id: "crunchy-rolls",
             fr: "Crunchy Rolls",
             en: "Crunchy Rolls",
+            titleFR: "Crunchy Rolls (6 pièces)",
+            titleEN: "Crunchy Rolls (6 pieces)"
+        },
+
+        {
+            id: "crunchy-mix",
+            fr: "Crunchy Mix",
+            en: "Crunchy Mix",
+            titleFR: "Crunchy Mix (12 pièces)",
+            titleEN: "Crunchy Mix (12 pieces)"
         },
 
         {
@@ -195,13 +227,17 @@ const subcategoriesOrder = {
         {
             id: "yakitori",
             fr: "Yakitori",
-            en: "Yakitori"
+            en: "Yakitori",
+            titleFR: "Yakitori (2 pièces)",
+            titleEN: "Yakitori (2 pieces)"
         },
 
         {
             id: "kushikatsu",
             fr: "Kushikatsu",
-            en: "Kushikatsu"
+            en: "Kushikatsu",
+            titleFR: "Kushikatsu (2 pièces)",
+            titleEN: "Kushikatsu (2 pieces)"
         },
 
         {
