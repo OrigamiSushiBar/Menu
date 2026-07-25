@@ -825,6 +825,12 @@ body {
     overflow:
         hidden;
 
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
     transition:
         transform 0.25s,
         box-shadow 0.25s;
@@ -934,9 +940,22 @@ body {
     padding:
         15px;
 
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    flex:
+        1;
+
 }
 
 
+
+/* =========================================================
+   NOM PRODUIT
+   ========================================================= */
 
 .product-name {
 
@@ -954,7 +973,7 @@ body {
 
 
 /* =========================================================
-   🆕 DESCRIPTION PRODUIT
+   DESCRIPTION PRODUIT
    ========================================================= */
 
 .product-description {
@@ -989,6 +1008,9 @@ body {
 
     color:
         var(--gold);
+
+    margin-top:
+        auto;
 
 }
 
