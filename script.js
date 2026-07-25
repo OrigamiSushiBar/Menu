@@ -527,6 +527,97 @@ const products = [
     },
 
 
+    {
+        reference: "81",
+        nameFR: "Origamix 12 Pièces",
+        nameEN: "Origamix 12-Piece Set",
+        descriptionFR: "3 Futomaki, 4 California, 3 Hosomaki et 2 Nigiri",
+        descriptionEN: "3 Futomaki, 4 California Rolls, 3 Hosomaki and 2 Nigiri",
+        price: "35,000 DT",
+        image: "images/81.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "82",
+        nameFR: "Origamix 22 Pièces",
+        nameEN: "Origamix 22-Piece Set",
+        descriptionFR: "6 Futomaki, 6 California, 6 Hosomaki et 4 Nigiri",
+        descriptionEN: "6 Futomaki, 6 California Rolls, 6 Hosomaki and 4 Nigiri",
+        price: "63,000 DT",
+        image: "images/82.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "83",
+        nameFR: "Origamix 32 Pièces",
+        nameEN: "Origamix 32-Piece Set",
+        descriptionFR: "9 Futomaki, 9 California, 9 Hosomaki et 5 Nigiri",
+        descriptionEN: "9 Futomaki, 9 California Rolls, 9 Hosomaki et 5 Nigiri",
+        price: "90,000 DT",
+        image: "images/83.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "84",
+        nameFR: "Origamix 42 Pièces",
+        nameEN: "Origamix 42-Piece Set",
+        descriptionFR: "12 Futomaki, 12 California, 12 Hosomaki et 6 Nigiri",
+        descriptionEN: "12 Futomaki, 12 California Rolls, 12 Hosomaki et 6 Nigiri",
+        price: "118,000 DT",
+        image: "images/84.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "85",
+        nameFR: "Origamix 52 Pièces",
+        nameEN: "Origamix 52-Piece Set",
+        descriptionFR: "15 Futomaki, 15 California, 15 Hosomaki et 7 Nigiri",
+        descriptionEN: "15 Futomaki, 15 California Rolls, 15 Hosomaki et 7 Nigiri",
+        price: "144,000 DT",
+        image: "images/85.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "211",
+        nameFR: "Origamix 12 Pièces Saumon",
+        nameEN: "Origamix 12-Piece Salmon set",
+        descriptionFR: "Futomaki saumon,  California saumon,  Hosomaki saumon et  Nigiri saumon",
+        descriptionEN: "3 salmon Futomaki, 4 salmon California Rolls, 3 salmon Hosomaki and 2 salmon Nigiri",
+        price: "44,000 DT",
+        image: "images/211.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "212",
+        nameFR: "Origamix 22 Pièces Saumon",
+        nameEN: "Origamix 22-Piece Salmon Set",
+        descriptionFR: "",
+        descriptionEN: "",
+        price: "",
+        image: "",
+        category: "",
+        subcategory: "",
+    },
+
+
     
     {
         reference: "193",
