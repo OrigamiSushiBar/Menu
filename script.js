@@ -1391,56 +1391,48 @@ function renderSubcategories() {
 
 function scrollToElement(element) {
 
-    const header =
-        document.querySelector(".site-header");
-
-    const categoryNavigation =
-        document.querySelector(".category-navigation");
-
-    const subcategoryNavigation =
+    // On récupère la barre des sous-catégories
+    const subcategoryBar =
         document.querySelector(".subcategory-navigation");
 
 
-    const headerHeight =
-        header
-            ? header.getBoundingClientRect().height
-            : 0;
+    // Position actuelle du titre dans la fenêtre
+    const elementRect =
+        element.getBoundingClientRect();
 
 
-    const categoryNavigationHeight =
-        categoryNavigation
-            ? categoryNavigation.getBoundingClientRect().height
-            : 0;
+    // Position actuelle de la barre sticky dans la fenêtre
+    const barRect =
+        subcategoryBar.getBoundingClientRect();
 
 
-    const subcategoryNavigationHeight =
-        subcategoryNavigation
-            ? subcategoryNavigation.getBoundingClientRect().height
-            : 0;
+    // On calcule la différence entre
+    // le haut du titre et le bas de la barre
+    const distance =
+        elementRect.top -
+        barRect.bottom;
 
 
-    const totalOffset =
-        headerHeight +
-        categoryNavigationHeight +
-        subcategoryNavigationHeight +
-        10;
-
-
-    const elementPosition =
-        element.getBoundingClientRect().top +
+    // Position actuelle du scroll
+    const currentScroll =
         window.scrollY;
 
 
+    // Nouvelle position :
+    // on déplace la page de la distance nécessaire
     const targetPosition =
-        elementPosition -
-        totalOffset;
+        currentScroll +
+        distance -
+        10;
 
 
     window.scrollTo({
 
-        top: targetPosition,
+        top:
+            targetPosition,
 
-        behavior: "smooth"
+        behavior:
+            "smooth"
 
     });
 
