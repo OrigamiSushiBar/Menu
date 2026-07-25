@@ -745,8 +745,7 @@ const products = [
         reference: "196",
         nameFR: "Yakitori Poulet",
         nameEN: "Chicken Yakitori",
-        descriptionFR:
-            "Brochettes de poulet grillées et délicatement assaisonnées.",
+        descriptionFR:"",
         descriptionEN:
             "Grilled chicken skewers, delicately seasoned.",
         price: "15 DT",
@@ -760,8 +759,7 @@ const products = [
         reference: "197",
         nameFR: "Yakitori Bœuf",
         nameEN: "Beef Yakitori",
-        descriptionFR:
-            "Brochettes de bœuf grillées et savoureuses.",
+        descriptionFR: "",
         descriptionEN:
             "Flavorful grilled beef skewers.",
         price: "17 DT",
