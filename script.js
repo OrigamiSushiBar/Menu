@@ -885,12 +885,23 @@ document.addEventListener(
     "DOMContentLoaded",
     () => {
 
-
         const savedLanguage =
             localStorage.getItem(
                 "origamiLanguage"
             );
 
+
+        currentYear.textContent =
+            new Date().getFullYear();
+
+
+        setupEventListeners();
+
+
+        /*
+           Si une langue a déjà été choisie,
+           on affiche directement le menu.
+        */
 
         if (
             savedLanguage === "fr" ||
@@ -904,16 +915,8 @@ document.addEventListener(
 
         }
 
-
-        currentYear.textContent =
-            new Date().getFullYear();
-
-
-        setupEventListeners();
-
     }
 );
-
 
 
 /* =========================================================
@@ -930,14 +933,12 @@ function setupEventListeners() {
                 "click",
                 () => {
 
-
                     const selectedLanguage =
                         button.dataset.language;
 
 
-                    setLanguage(
-                        selectedLanguage
-                    );
+                    currentLanguage =
+                        selectedLanguage;
 
 
                     showMenu();
