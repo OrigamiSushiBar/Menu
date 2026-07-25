@@ -647,7 +647,7 @@ const products = [
 
 
     {
-        reference: ""215,
+        reference: "215",
         nameFR: "Origamix 52 Pièces Saumon",
         nameEN: "Origamix 52-Piece Salmon Set",
         descriptionFR: "15 Futomaki saumon, 15 California saumon, 15 Hosomaki saumon et 7 Nigiri saumon",
