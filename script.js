@@ -695,6 +695,188 @@ const products = [
     },
 
 
+    {
+        reference: "11",
+        nameFR: "Sashimi Thon",
+        nameEN: "Tuna Sashimi",
+        descriptionFR: "Tranches de Thon Rouge de Qualité Supérieure (Selon Arrivage)",
+        descriptionEN: "Premium Bluefin Tuna Slices (Subject to Availability)",
+        price: "12,000 DT",
+        image: "images/11.jpg",
+        category: "sushi",
+        subcategory: "sashimis",
+    },
+
+
+    {
+        reference: "12",
+        nameFR: "Sashimi Saumon",
+        nameEN: "Salmon Sashimi",
+        descriptionFR: "Tranches de Saumon D'élevage Norvège",
+        descriptionEN: "Norwegian Farm-Raised Salmon Slices",
+        price: "15,000 DT",
+        image: "images/12.jpg",
+        category: "sushi",
+        subcategory: "sashimis",
+    },
+
+
+    {
+        reference: "13",
+        nameFR: "Sashimi Loup",
+        nameEN: "Sea Bass Sashimi",
+        descriptionFR: "Tranches de Loup (Bar) de Méditerranée",
+        descriptionEN: "Mediterranean Sea Bass Slices",
+        price: "14,000 DT",
+        image: "images/13.jpg",
+        category: "sushi",
+        subcategory: "sashimis",
+    },
+
+
+    {
+        reference: "15",
+        nameFR: "Sashimi Daurade",
+        nameEN: "Sea Bream Sashimi",
+        descriptionFR: "Tranches de Daurade Royale Fraîche",
+        descriptionEN: "Fresh Gilthead Sea Bream Slices",
+        price: "13,000 DT",
+        image: "images/15.jpg",
+        category: "sushi",
+        subcategory: "sashimis",
+    },
+
+
+    {
+        reference: "17",
+        nameFR: "Nigiri Saumon",
+        nameEN: "Salmon nigiri",
+        descriptionFR: "Saumon Frais Sur Riz Vinaigré Traditionnel",
+        descriptionEN: "Fresh Salmon on Traditional Seasoned Sushi Rice",
+        price: "11,000 DT",
+        image: "images/17.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "18",
+        nameFR: "Nigiri Thon",
+        nameEN: "Tuna Nigiri",
+        descriptionFR: "Thon Rouge Frais sur Riz Vinaigré",
+        descriptionEN: "Fresh Bluefin Tuna on Seasoned Sushi Rice",
+        price: "9,000 DT",
+        image: "images/18.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "19",
+        nameFR: "Nigiri Crevette",
+        nameEN: "Shrimp Nigiri",
+        descriptionFR: "Crevette Cuite sur Riz Sushi",
+        descriptionEN: "Cooked Shrimp on Seasoned Sushi Rice",
+        price: "11,000 DT",
+        image: "images/19.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "20",
+        nameFR: "Nigiri Daurade",
+        nameEN: "Sea Bream Nigiri",
+        descriptionFR: "Daurade Royale Fraîche sur Riz Vinaigré",
+        descriptionEN: "Fresh Gilthead Sea Bream on Seasoned Sushi Rice",
+        price: "9,000 DT",
+        image: "images/20.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "21",
+        nameFR: "Nigiri Anguille",
+        nameEN: "Eel Nigiri",
+        descriptionFR: "Anguille Grillée et Laquée sur Riz Sushi",
+        descriptionEN: "Grilled and Glazed Eel on Seasoned Sushi Rice",
+        price: "10,000 DT",
+        image: "images/21.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "22",
+        nameFR: "Nigiri poulpe",
+        nameEN: "Octopus Nigiri",
+        descriptionFR: "Poulpe Tendre Cuit sur Riz",
+        descriptionEN: "Tender Cooked Octopus on Seasoned Sushi Rice",
+        price: "11,000 DT",
+        image: "images/22.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "23",
+        nameFR: "Nigiri Saumon Fumé",
+        nameEN: "Smoked Salmon Nigiri",
+        descriptionFR: "Saumon Fumé à Froid sur Riz Vinaigré",
+        descriptionEN: "Cold-Smoked Salmon on Seasoned Sushi Rice",
+        price: "12,000 DT",
+        image: "images/23.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "24",
+        nameFR: "Nigiri Boutargue",
+        nameEN: "Bottarga Nigiri",
+        descriptionFR: "Œufs de Mulet Salés et Séchés - Spécialité Méditerranéeene",
+        descriptionEN: "Salted and Dried Mullet Roe – Mediterranean Specialty",
+        price: "19,000 DT",
+        image: "images/24.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "25",
+        nameFR: "Nigiri Loup",
+        nameEN: "Sea Bass Nigiri",
+        descriptionFR: "Bar de Méditerranée sur Riz Sushi",
+        descriptionEN: "Mediterranean Sea Bass on Seasoned Sushi Rice",
+        price: "10,000 DT",
+        image: "images/25.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "26",
+        nameFR: "Nigiri Avocat",
+        nameEN: "Avocado Nigiri",
+        descriptionFR: "Option Végétarienne - Avocat Frais sur Riz",
+        descriptionEN: "Vegetarian Option – Fresh Avocado on Seasoned Sushi Rice",
+        price: "7,000 DT",
+        image: "images/26.jpg",
+        category: "sushi",
+        subcategory: "nigiris",
+    },
+
+
     
     {
         reference: "193",
