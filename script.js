@@ -2058,6 +2058,21 @@ function createProductCard(
             : product.descriptionEN;
 
 
+    const descriptionHTML =
+
+        productDescription
+
+            ? `
+                <p class="product-description">
+
+                    ${productDescription}
+
+                </p>
+            `
+
+            : "";
+
+
 
     card.innerHTML = `
 
@@ -2096,11 +2111,7 @@ function createProductCard(
             </h3>
 
 
-            <p class="product-description">
-
-                ${productDescription}
-
-            </p>
+            ${descriptionHTML}
 
 
             <div class="product-price">
