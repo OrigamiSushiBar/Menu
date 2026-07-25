@@ -1383,53 +1383,60 @@ function renderSubcategories() {
 
 }
 
-
-
 /* =========================================================
    SCROLL VERS UNE SOUS-CATÉGORIE
    ========================================================= */
 
 function scrollToElement(element) {
 
-    // On récupère la barre des sous-catégories
     const subcategoryBar =
-        document.querySelector(".subcategory-navigation");
+        document.querySelector(
+            ".subcategory-navigation"
+        );
 
 
-    // Position actuelle du titre dans la fenêtre
-    const elementRect =
-        element.getBoundingClientRect();
+    if (!subcategoryBar || !element) {
+        return;
+    }
 
 
-    // Position actuelle de la barre sticky dans la fenêtre
-    const barRect =
-        subcategoryBar.getBoundingClientRect();
+    /*
+       On récupère la position ABSOLUE du titre
+       dans toute la page.
+    */
 
-
-    // On calcule la différence entre
-    // le haut du titre et le bas de la barre
-    const distance =
-        elementRect.top -
-        barRect.bottom;
-
-
-    // Position actuelle du scroll
-    const currentScroll =
+    const elementTop =
+        element.getBoundingClientRect().top +
         window.scrollY;
 
 
-    // Nouvelle position :
-    // on déplace la page de la distance nécessaire
+    /*
+       On récupère la hauteur actuelle
+       de la barre des sous-catégories.
+    */
+
+    const barHeight =
+        subcategoryBar.getBoundingClientRect().height;
+
+
+    /*
+       On place le titre juste sous
+       la barre sticky.
+    */
+
     const targetPosition =
-        currentScroll +
-        distance -
+        elementTop -
+        barHeight -
         10;
 
 
     window.scrollTo({
 
         top:
-            targetPosition,
+            Math.max(
+                0,
+                targetPosition
+            ),
 
         behavior:
             "smooth"
@@ -1472,19 +1479,6 @@ function setActiveSubcategory(
         "active"
     );
 
-
-    activeButton.scrollIntoView({
-
-        behavior:
-            "smooth",
-
-        block:
-            "nearest",
-
-        inline:
-            "center"
-
-    });
 
 }
 
