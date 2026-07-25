@@ -68,7 +68,9 @@ const subcategoriesOrder = {
         {
             id: "gyozas",
             fr: "Gyozas",
-            en: "Gyoza"
+            en: "Gyoza",
+            titleFR: "Gyozas (4 Pièces)",
+            titleEN: "Gyoza (4 Pieces)"
         },
        
         {
@@ -609,12 +611,51 @@ const products = [
         reference: "212",
         nameFR: "Origamix 22 Pièces Saumon",
         nameEN: "Origamix 22-Piece Salmon Set",
-        descriptionFR: "",
-        descriptionEN: "",
-        price: "",
-        image: "",
-        category: "",
-        subcategory: "",
+        descriptionFR: "6 Futomaki saumon, 6 California saumon, 6 Hosomaki saumon et 4 Nigiri saumon",
+        descriptionEN: "6 salmon Futomaki, 6 salmon California rolls, 6 salmon Hosomaki and 4 salmon Nigiri",
+        price: "79,000 DT",
+        image: "images/212.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "213",
+        nameFR: "Origamix 32 Pièces Saumon",
+        nameEN: "Origamix 32-Piece Salmon Set",
+        descriptionFR: "9 Futomaki saumon, 9 California saumon, 9 Hosomaki saumon et 5 Nigiri saumon",
+        descriptionEN: "9 salmon Futomaki, 9 salmon California rolls, 9 salmon Hosomaki and 5 salmon Nigiri",
+        price: "114,000 DT",
+        image: "images/213.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: "214",
+        nameFR: "Origamix 42 Pièces Saumon",
+        nameEN: "Origamix 42-Piece Salmon Set",
+        descriptionFR: "12 Futomaki saumon, 12 California saumon, 12 Hosomaki saumon et 6 Nigiri saumon",
+        descriptionEN: "12 salmon Futomaki, 12 salmon California rolls, 12 salmon Hosomaki and 6 salmon Nigiri",
+        price: "149,000 DT",
+        image: "images/214.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
+    },
+
+
+    {
+        reference: ""215,
+        nameFR: "Origamix 52 Pièces Saumon",
+        nameEN: "Origamix 52-Piece Salmon Set",
+        descriptionFR: "15 Futomaki saumon, 15 California saumon, 15 Hosomaki saumon et 7 Nigiri saumon",
+        descriptionEN: "15 salmon Futomaki, 15 salmon California rolls, 15 salmon Hosomaki and 7 salmon Nigiri",
+        price: "179,000 DT",
+        image: "images/215.jpg",
+        category: "sushi",
+        subcategory: "plateaux",
     },
 
 
@@ -1860,9 +1901,17 @@ function renderCategory(
 
             subcategoryTitle.textContent =
 
-                subcategory[
-                    currentLanguage
-                ];
+                currentLanguage === "fr"
+
+                    ? (
+                        subcategory.titleFR ||
+                        subcategory.fr
+                    )
+
+                    : (
+                        subcategory.titleEN ||
+                        subcategory.en
+                    );
 
 
             productsContainer.appendChild(
