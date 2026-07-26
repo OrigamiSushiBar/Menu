@@ -1507,6 +1507,11 @@ document.addEventListener(
     "DOMContentLoaded",
     () => {
 
+        document.documentElement.classList.add(
+            "no-scroll"
+        );
+
+
         const savedLanguage =
             localStorage.getItem(
                 "origamiLanguage"
@@ -1691,6 +1696,11 @@ function setLanguage(
    ========================================================= */
 
 function showMenu() {
+
+
+    document.documentElement.classList.remove(
+        "no-scroll"
+    );
 
 
     languageScreen.classList.add(
