@@ -45,20 +45,25 @@ RESET
 
 * {
 
-  margin: 0;
+  margin:
+  0;
 
-  padding: 0;
+  padding:
+  0;
 
-  box-sizing: border-box;
+  box-sizing:
+  border-box;
 
 }
 
 html {
 
 ```
-scroll-behavior: smooth;
+scroll-behavior:
+    smooth;
 
-scroll-padding-top: 150px;
+scroll-padding-top:
+    150px;
 ```
 
 }
@@ -137,9 +142,6 @@ width:
 max-width:
     500px;
 
-text-align:
-    center;
-
 display:
     flex;
 
@@ -150,6 +152,9 @@ align-items:
     center;
 
 justify-content:
+    center;
+
+text-align:
     center;
 ```
 
@@ -168,14 +173,14 @@ display:
 width:
     auto;
 
+height:
+    auto;
+
 max-width:
     350px;
 
 max-height:
     160px;
-
-height:
-    auto;
 
 object-fit:
     contain;
@@ -187,34 +192,46 @@ margin:
 }
 
 /* =========================================================
-TITRE — ÉCRAN DE LANGUE
+BIENVENUE
 ========================================================= */
 
 .language-box h1 {
 
 ```
+display:
+    block;
+
+width:
+    100%;
+
 font-size:
     28px;
 
 line-height:
     1.2;
 
-margin:
-    0 0 8px;
-
 text-align:
     center;
+
+margin:
+    0 0 8px;
 ```
 
 }
 
 /* =========================================================
-SOUS-TITRE — ÉCRAN DE LANGUE
+CHOISISSEZ VOTRE LANGUE
 ========================================================= */
 
 .language-box p {
 
 ```
+display:
+    block;
+
+width:
+    100%;
+
 color:
     var(--text-light);
 
@@ -224,11 +241,11 @@ font-size:
 line-height:
     1.4;
 
-margin:
-    0 0 30px;
-
 text-align:
     center;
+
+margin:
+    0 0 30px;
 ```
 
 }
@@ -264,11 +281,17 @@ width:
 .language-choice {
 
 ```
-flex:
-    0 1 180px;
+display:
+    block;
 
 width:
     180px;
+
+max-width:
+    180px;
+
+flex:
+    none;
 
 padding:
     18px;
@@ -278,6 +301,9 @@ border:
 
 background:
     var(--white);
+
+color:
+    var(--text);
 
 cursor:
     pointer;
@@ -1192,6 +1218,9 @@ max-width: 600px
 
 .language-box {
 
+    width:
+        100%;
+
     max-width:
         100%;
 
@@ -1201,10 +1230,10 @@ max-width: 600px
 .language-box .logo {
 
     max-width:
-        320px;
+        300px;
 
     max-height:
-        150px;
+        140px;
 
     margin:
         0 auto 20px;
@@ -1214,30 +1243,54 @@ max-width: 600px
 
 .language-box h1 {
 
+    width:
+        100%;
+
     font-size:
         24px;
+
+    text-align:
+        center;
+
+    margin:
+        0 0 8px;
 
 }
 
 
 .language-box p {
 
+    width:
+        100%;
+
     font-size:
         15px;
 
-    margin-bottom:
-        25px;
+    text-align:
+        center;
+
+    margin:
+        0 0 25px;
 
 }
 
 
 .language-buttons {
 
+    display:
+        flex;
+
     flex-direction:
         column;
 
     align-items:
         center;
+
+    justify-content:
+        center;
+
+    width:
+        100%;
 
     gap:
         12px;
@@ -1304,6 +1357,10 @@ max-width: 600px
 }
 
 
+/* =====================================================
+   NAVIGATION — MOBILE
+   ===================================================== */
+
 .category-navigation {
 
     padding-left:
@@ -1325,6 +1382,10 @@ max-width: 600px
 
 }
 
+
+/* =====================================================
+   PRODUITS — MOBILE
+   ===================================================== */
 
 .products-container {
 
