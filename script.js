@@ -1146,11 +1146,12 @@ const products = [
         descriptionFR: "Avocat, Surimi, Concombre, Mayo, Sésame",
         descriptionEN: "Avocado, Crab Surimi, Cucumber, Mayonnaise & Sesame",
         price: "10,000 DT",
-        image: "images/10.jpg",
+        image: "images/50.jpg",
         category: "sushi",
         subcategory: "california",
     },
 
+   
     {
         reference: "51",
         nameFR: "California Végétarien",
