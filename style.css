@@ -987,8 +987,11 @@ body {
     color:
         var(--text-light);
 
+    margin-top:
+        0;
+
     margin-bottom:
-        20px;
+        15px;
 
 }
 
@@ -1228,7 +1231,7 @@ body {
             13px;
 
         margin-bottom:
-            12px;
+            15px;
 
     }
 
@@ -1240,6 +1243,9 @@ body {
 
         line-height:
             1.4;
+
+        margin-top:
+            0;
 
         margin-bottom:
             15px;
