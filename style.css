@@ -31,6 +31,18 @@
     --border:
         #e5e1da;
 
+    --radius:
+        14px;
+
+    --radius-sm:
+        8px;
+
+    --shadow:
+        0 4px 16px rgba(0, 0, 0, 0.05);
+
+    --shadow-hover:
+        0 10px 28px rgba(234, 27, 36, 0.12);
+
     --font-main:
         Arial,
         Helvetica,
@@ -92,6 +104,19 @@ body {
 
     display:
         none !important;
+
+}
+
+
+
+html.no-scroll,
+html.no-scroll body {
+
+    overflow:
+        hidden;
+
+    height:
+        100%;
 
 }
 
@@ -301,7 +326,7 @@ body {
         contain;
 
     margin:
-        5px auto 20px;
+        5px auto 28px;
 
     filter:
         drop-shadow(0 6px 14px rgba(234, 27, 36, 0.12));
@@ -311,30 +336,8 @@ body {
 
 
 /* =========================================================
-   ACCROCHE — ÉCRAN DE LANGUE
+   LOGO — ÉCRAN DE LANGUE (suite)
    ========================================================= */
-
-.language-tagline {
-
-    color:
-        var(--primary);
-
-    font-size:
-        12px;
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        3px;
-
-    text-transform:
-        uppercase;
-
-    margin-bottom:
-        18px;
-
-}
 
 
 
@@ -506,10 +509,45 @@ body {
         center;
 
     padding:
-        25px 20px 25px;
+        25px 20px 28px;
 
     background:
-        var(--background);
+        var(--white);
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.04);
+
+}
+
+
+
+.site-header::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    bottom:
+        0;
+
+    left:
+        0;
+
+    right:
+        0;
+
+    height:
+        3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary) 0%,
+            #f4a3a8 50%,
+            var(--primary) 100%
+        );
 
 }
 
@@ -583,13 +621,13 @@ body {
         20px;
 
     border:
-        1px solid var(--border);
+        1.5px solid var(--border);
 
     background:
         var(--white);
 
     padding:
-        8px 12px;
+        8px 14px;
 
     cursor:
         pointer;
@@ -597,8 +635,11 @@ body {
     font-size:
         13px;
 
+    font-weight:
+        600;
+
     border-radius:
-        4px;
+        20px;
 
     transition:
         0.2s;
@@ -610,6 +651,9 @@ body {
 .language-switcher:hover {
 
     border-color:
+        var(--primary);
+
+    color:
         var(--primary);
 
 }
@@ -650,10 +694,10 @@ body {
         100%;
 
     padding:
-        14px 45px 14px 18px;
+        14px 45px 14px 44px;
 
     border:
-        1px solid var(--border);
+        1.5px solid var(--border);
 
     background:
         var(--white);
@@ -665,7 +709,40 @@ body {
         15px;
 
     border-radius:
-        5px;
+        30px;
+
+    transition:
+        0.2s;
+
+}
+
+
+
+.search-box::before {
+
+    content:
+        "🔍";
+
+    position:
+        absolute;
+
+    left:
+        16px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    font-size:
+        15px;
+
+    opacity:
+        0.5;
+
+    pointer-events:
+        none;
 
 }
 
@@ -675,6 +752,9 @@ body {
 
     border-color:
         var(--primary);
+
+    box-shadow:
+        0 0 0 4px rgba(234, 27, 36, 0.08);
 
 }
 
@@ -764,10 +844,10 @@ body {
         0 0 auto;
 
     padding:
-        10px 17px;
+        11px 20px;
 
     border:
-        1px solid var(--border);
+        1.5px solid var(--border);
 
     background:
         var(--white);
@@ -784,8 +864,14 @@ body {
     font-size:
         14px;
 
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.3px;
+
     border-radius:
-        4px;
+        30px;
 
     transition:
         0.2s;
@@ -799,20 +885,23 @@ body {
     border-color:
         var(--primary);
 
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        var(--shadow);
+
 }
 
 
 
 .category-button.active {
 
-    background:
-        var(--primary);
-
-    color:
-        var(--white);
-
     border-color:
-        var(--primary);
+        transparent;
+
+    box-shadow:
+        var(--shadow-hover);
 
 }
 
@@ -837,24 +926,21 @@ body {
         flex;
 
     gap:
-        8px;
+        6px;
 
     overflow-x:
         auto;
 
     padding:
-        10px 20px;
+        12px 20px;
 
     background:
         rgba(
-            247,
-            245,
-            241,
-            0.96
+            255,
+            255,
+            255,
+            0.94
         );
-
-    border-top:
-        1px solid var(--border);
 
     border-bottom:
         1px solid var(--border);
@@ -884,13 +970,13 @@ body {
         0 0 auto;
 
     padding:
-        8px 15px;
+        8px 16px;
 
     border:
-        none;
+        1.5px solid transparent;
 
     background:
-        transparent;
+        var(--background);
 
     color:
         var(--text-light);
@@ -904,6 +990,12 @@ body {
     font-size:
         13px;
 
+    font-weight:
+        600;
+
+    border-radius:
+        20px;
+
     transition:
         0.2s;
 
@@ -916,6 +1008,9 @@ body {
     color:
         var(--text);
 
+    border-color:
+        var(--border);
+
 }
 
 
@@ -923,7 +1018,13 @@ body {
 .subcategory-button.active {
 
     color:
-        var(--text);
+        var(--cat-accent, var(--primary));
+
+    background:
+        var(--white);
+
+    border-color:
+        var(--cat-accent, var(--primary));
 
     font-weight:
         700;
@@ -934,20 +1035,8 @@ body {
 
 .subcategory-button.active::after {
 
-    content:
-        "";
-
     display:
-        block;
-
-    height:
-        2px;
-
-    background:
-        var(--cat-accent, var(--primary));
-
-    margin-top:
-        5px;
+        none;
 
 }
 
@@ -978,6 +1067,9 @@ body {
 
 .category-title {
 
+    position:
+        relative;
+
     font-size:
         26px;
 
@@ -991,16 +1083,49 @@ body {
         uppercase;
 
     margin:
-        35px 0 25px;
+        40px 0 25px;
 
     padding-bottom:
-        12px;
+        14px;
+
+    padding-left:
+        16px;
 
     border-bottom:
         1px solid var(--border);
 
     scroll-margin-top:
         70px;
+
+}
+
+
+
+.category-title::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    top:
+        4px;
+
+    width:
+        6px;
+
+    height:
+        6px;
+
+    background:
+        var(--primary);
+
+    transform:
+        rotate(45deg);
 
 }
 
@@ -1027,8 +1152,8 @@ body {
     margin:
         35px 0 18px;
 
-    padding-left:
-        12px;
+    padding:
+        4px 0 4px 14px;
 
     border-left:
         3px solid var(--primary);
@@ -1074,6 +1199,9 @@ body {
     border:
         1px solid var(--border);
 
+    border-radius:
+        var(--radius);
+
     overflow:
         hidden;
 
@@ -1083,9 +1211,13 @@ body {
     flex-direction:
         column;
 
+    box-shadow:
+        var(--shadow);
+
     transition:
         transform 0.25s,
-        box-shadow 0.25s;
+        box-shadow 0.25s,
+        border-color 0.25s;
 
 }
 
@@ -1095,17 +1227,23 @@ body {
 
     transform:
         translateY(
-            -3px
+            -4px
         );
 
+    border-color:
+        var(--primary);
+
     box-shadow:
-        0 8px 25px
-        rgba(
-            0,
-            0,
-            0,
-            0.08
-        );
+        var(--shadow-hover);
+
+}
+
+
+
+.product-card:hover .product-image {
+
+    transform:
+        scale(1.06);
 
 }
 
@@ -1147,6 +1285,9 @@ body {
     display:
         block;
 
+    transition:
+        transform 0.4s ease;
+
 }
 
 
@@ -1163,21 +1304,22 @@ body {
         10px;
 
     background:
-        rgba(
-            0,
-            0,
-            0,
-            0.7
-        );
+        var(--primary);
 
     color:
         white;
 
     padding:
-        5px 8px;
+        4px 9px;
 
     font-size:
-        12px;
+        11px;
+
+    font-weight:
+        700;
+
+    border-radius:
+        20px;
 
 }
 
@@ -1267,14 +1409,26 @@ body {
 
 .product-price {
 
+    display:
+        inline-block;
+
     font-size:
-        15px;
+        14px;
 
     font-weight:
         700;
 
     color:
         var(--primary);
+
+    background:
+        rgba(234, 27, 36, 0.08);
+
+    padding:
+        5px 12px;
+
+    border-radius:
+        20px;
 
     margin-top:
         0;
@@ -1323,11 +1477,14 @@ body {
 
 .site-footer {
 
+    position:
+        relative;
+
     text-align:
         center;
 
     padding:
-        40px 20px;
+        45px 20px 40px;
 
     border-top:
         1px solid var(--border);
@@ -1339,13 +1496,43 @@ body {
 
 
 
+.site-footer::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        -1px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        60px;
+
+    height:
+        3px;
+
+    background:
+        var(--primary);
+
+}
+
+
+
 .site-footer .logo {
 
     color:
-        var(--text);
+        var(--primary);
 
     font-weight:
-        700;
+        800;
 
     letter-spacing:
         4px;
