@@ -1007,6 +1007,227 @@ const products = [
     },
 
 
+    {
+        reference: "34",
+        nameFR: "Maki Concombre",
+        nameEN: "Cucumber Maki",
+        descriptionFR: "Maki simple concombre croquant",
+        descriptionEN: "Maki Filled with Crunchy Cucumber",
+        price: "9,000 DT",
+        image: "images/34.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "34a",
+        nameFR: "Maki Concombre Cheese",
+        nameEN: "Cucumber & Cheese Maki",
+        descriptionFR: "Maki Concombre au Fromage à La Crème",
+        descriptionEN: "Maki Filled with Cucumber & Cream Cheese",
+        price: "10,000 DT",
+        image: "images/34a.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "35",
+        nameFR: "Maki Avocat",
+        nameEN: "Avocado Maki",
+        descriptionFR: "Maki Avocat Frais",
+        descriptionEN: "Maki Filled with Fresh Avocado",
+        price: "12,000",
+        image: "images/35.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "35a",
+        nameFR: "Maki Avocat Cheese",
+        nameEN: "Avocado & Cheese Maki",
+        descriptionFR: "Maki Avocat au Fromage à La Crème",
+        descriptionEN: "Maki Filled with Avocado & Cream Cheese",
+        price: "13,000 DT",
+        image: "images/35a.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "36",
+        nameFR: "Maki Surimi",
+        nameEN: "Surimi Maki",
+        descriptionFR: "Maki au Surimi de Crabe",
+        descriptionEN: "Maki Filled with Crab Surimi",
+        price: "10,000 DT",
+        image: "images/36.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "37",
+        nameFR: "Maki Saumon",
+        nameEN: "Salmon Maki",
+        descriptionFR: "Maki au Saumon Frais Classique",
+        descriptionEN: "Classic Maki Filled with Fresh Salmon",
+        price: "16,000 DT",
+        image: "images/37.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "37a",
+        nameFR: "Maki Saumon Cheese",
+        nameEN: "Salmon & Cheese Maki",
+        descriptionFR: "Maki Saumon au Fromage à La Crème",
+        descriptionEN: "Maki Filled with Salmon & Cream Cheese",
+        price: "17,000 DT",
+        image: "images/37a.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "38",
+        nameFR: "Maki Thon",
+        nameEN: "Tuna Maki",
+        descriptionFR: "Maki Thon Rouge (selon arrivage)",
+        descriptionEN: "Maki Filled with Bluefin Tuna (subject to availability)",
+        price: "13,000 DT",
+        image: "images/38.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "39",
+        nameFR: "Maki Saumon Épicé",
+        nameEN: "Spicy Salmon Maki",
+        descriptionFR: "Maki Saumon Sauce Épicée",
+        descriptionEN: "Maki Filled with Salmon & Spicy Sauce",
+        price: "16,000 DT",
+        image: "images/39.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "40",
+        nameFR: "Maki Thon Épicé",
+        nameEN: "Spicy Tuna Maki",
+        descriptionFR: "Maki Shon Sauce Épicé (selon arrivage)",
+        descriptionEN: "Maki Filled with Tuna & Spicy Sauce (subject to availability)",
+        price: "13,000 DT",
+        image: "images/40.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "42",
+        nameFR: "Maki Saumon Fumé",
+        nameEN: "Smoked Salmon Maki",
+        descriptionFR: "Maki au Saumon Fumé",
+        descriptionEN: "Maki Filled with Smoked Salmon",
+        price: "19,000 DT",
+        image: "images/42.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "42a",
+        nameFR: "Maki Saumon Fumé Cheese",
+        nameEN: "Smoked Salmon & Cheese Maki",
+        descriptionFR: "Maki Saumon Fumé au Fromage à La Crème",
+        descriptionEN: "Maki Filled with Smoked Salmon & Cream Cheese",
+        price: "20,000 DT",
+        image: "images/42a.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "43",
+        nameFR: "Maki Tamago",
+        nameEN: "Tamago Maki",
+        descriptionFR: "Maki à L'Omelette Japonaise",
+        descriptionEN: "Maki Filled with Japanese Omelette",
+        price: "11,000 DT",
+        image: "images/43.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+    
+    
+    {
+        reference: "44",
+        nameFR: "Maki Poulpe",
+        nameEN: "Octopus Maki",
+        descriptionFR: "Maki au Poulpe Cuit",
+        descriptionEN: "Maki Filled with Cooked Octopus",
+        price: "19,000 DT",
+        image: "images/44.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "45",
+        nameFR: "Maki Anguille",
+        nameEN: "Eel Maki",
+        descriptionFR: "Maki à L'Anguille Grillée",
+        descriptionEN: "Maki Filled with Grilled Eel",
+        price: "19,000 DT",
+        image: "images/45.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "46",
+        nameFR: "Maki Tartare de Poisson Blanc à La Boutargue",
+        nameEN: "White Fish Tartare with Bottarga Maki",
+        descriptionFR: "Maki Poisson Blanc aux Œufs de Mulet",
+        descriptionEN: "Maki Filled with White Fish & Mullet Roe",
+        price: "22,000 DT",
+        image: "images/46.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
+    {
+        reference: "47",
+        nameFR: "Maki Tartare de Daurade à L'Aneth",
+        nameEN: "Sea Bream Tartare Maki with Dill ",
+        descriptionFR: "Maki Daurade aux Herbes",
+        descriptionEN: "Maki Filled with Sea Bream & Herbs",
+        price: "14,000 DT",
+        image: "images/47.jpg",
+        category: "sushi",
+        subcategory: "hosomaki",
+    },
+
+
     
     {
         reference: "193",
