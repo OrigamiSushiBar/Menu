@@ -10,7 +10,6 @@
 
 const categoriesOrder = [
 
-    
     {
         id: "entrees",
         fr: "Entrées",
@@ -50,15 +49,14 @@ const categoriesOrder = [
 ];
 
 
-
 /* =========================================================
    🟢 2. SOUS-CATÉGORIES
    ========================================================= */
 
 const subcategoriesOrder = {
 
-
     "entrees": [
+
         {
             id: "soupes",
             fr: "Soupes",
@@ -72,7 +70,7 @@ const subcategoriesOrder = {
             titleFR: "Gyozas (4 pièces)",
             titleEN: "Gyoza (4 pieces)"
         },
-       
+
         {
             id: "salades",
             fr: "Salades",
@@ -86,7 +84,6 @@ const subcategoriesOrder = {
         }
 
     ],
-
 
 
     "sushi": [
@@ -104,7 +101,7 @@ const subcategoriesOrder = {
             titleFR: "Sashimis (3 pièces)",
             titleEN: "Sashimis (3 pieces)"
         },
-       
+
         {
             id: "nigiris",
             fr: "Nigiris",
@@ -204,19 +201,19 @@ const subcategoriesOrder = {
         {
             id: "riz-garni",
             fr: "Bols de Riz Garnis",
-            en: "Rice Bowls",
+            en: "Rice Bowls"
         },
 
         {
             id: "tataki",
             fr: "Spécialités Tataki",
-            en: "Tataki Specials",
+            en: "Tataki Specials"
         },
 
         {
             id: "onigarazu",
             fr: "Onigarazu",
-            en: "Onigarazu",
+            en: "Onigarazu"
         }
 
     ],
@@ -273,7 +270,6 @@ const subcategoriesOrder = {
     ],
 
 
-
     "accompagnements": [
 
         {
@@ -291,7 +287,6 @@ const subcategoriesOrder = {
     ],
 
 
-
     "desserts": [
 
         {
@@ -299,15 +294,14 @@ const subcategoriesOrder = {
             fr: "Glaces",
             en: "Ice Cream"
         },
-       
+
         {
             id: "fondants",
             fr: "Fondants",
-            en: "Lava Cakes",
+            en: "Lava Cakes"
         }
 
     ],
-
 
 
     "boissons": [
@@ -323,23 +317,8 @@ const subcategoriesOrder = {
 };
 
 
-
 /* =========================================================
    🟢 3. PRODUITS
-   =========================================================
-
-   POUR AJOUTER UN PRODUIT :
-
-   - reference       = référence du produit
-   - nameFR          = nom français
-   - nameEN          = nom anglais
-   - descriptionFR   = description française
-   - descriptionEN   = description anglaise
-   - price            = prix
-   - image            = chemin vers l'image
-   - category         = catégorie principale
-   - subcategory      = sous-catégorie
-
    ========================================================= */
 
 const products = [
@@ -356,7 +335,6 @@ const products = [
         subcategory: "soupes",
     },
 
-   
     {
         reference: "9",
         nameFR: "Soupe aux nouilles udon poulet",
@@ -368,7 +346,6 @@ const products = [
         category: "entrees",
         subcategory: "soupes",
     },
-
 
     {
         reference: "10",
@@ -382,7 +359,6 @@ const products = [
         subcategory: "soupes",
     },
 
-
     {
         reference: "10a",
         nameFR: "Soupe miso au poulpe",
@@ -394,7 +370,6 @@ const products = [
         category: "entrees",
         subcategory: "soupes",
     },
-
 
     {
         reference: "10b",
@@ -408,7 +383,6 @@ const products = [
         subcategory: "soupes",
     },
 
-
     {
         reference: "135a",
         nameFR: "Gyozas Poulet",
@@ -420,7 +394,6 @@ const products = [
         category: "entrees",
         subcategory: "gyozas",
     },
-
 
     {
         reference: "135b",
@@ -434,7 +407,6 @@ const products = [
         subcategory: "gyozas",
     },
 
-
     {
         reference: "135c",
         nameFR: "Gyozas Crevette",
@@ -446,7 +418,6 @@ const products = [
         category: "entrees",
         subcategory: "gyozas",
     },
-
 
     {
         reference: "5",
@@ -460,7 +431,6 @@ const products = [
         subcategory: "salades",
     },
 
-
     {
         reference: "5a",
         nameFR: "Salade d'algues wakame au poulpe",
@@ -472,7 +442,6 @@ const products = [
         category: "entrees",
         subcategory: "salades",
     },
-
 
     {
         reference: "5c",
@@ -486,7 +455,6 @@ const products = [
         subcategory: "salades",
     },
 
-
     {
         reference: "6",
         nameFR: "Salade sashimis, vinaigrette au miso",
@@ -498,7 +466,6 @@ const products = [
         category: "entrees",
         subcategory: "salades",
     },
-
 
     {
         reference: "7",
@@ -512,7 +479,6 @@ const products = [
         subcategory: "salades",
     },
 
-
     {
         reference: "1",
         nameFR: "Tartare de deux saumons au gingembre",
@@ -524,7 +490,6 @@ const products = [
         category: "entrees",
         subcategory: "tartares",
     },
-
 
     {
         reference: "2",
@@ -538,7 +503,6 @@ const products = [
         subcategory: "tartares",
     },
 
-
     {
         reference: "3",
         nameFR: "Tartare de daurade, mangue, avocat, coriandre, zeste de citron vert",
@@ -550,7 +514,6 @@ const products = [
         category: "entrees",
         subcategory: "tartares",
     },
-
 
     {
         reference: "4",
@@ -564,7 +527,6 @@ const products = [
         subcategory: "tartares",
     },
 
-
     {
         reference: "81",
         nameFR: "Origamix 12 Pièces",
@@ -576,7 +538,6 @@ const products = [
         category: "sushi",
         subcategory: "plateaux",
     },
-
 
     {
         reference: "82",
@@ -590,58 +551,53 @@ const products = [
         subcategory: "plateaux",
     },
 
-
     {
         reference: "83",
         nameFR: "Origamix 32 Pièces",
         nameEN: "Origamix 32-Piece Set",
         descriptionFR: "9 Futomaki, 9 California, 9 Hosomaki et 5 Nigiri",
-        descriptionEN: "9 Futomaki, 9 California Rolls, 9 Hosomaki et 5 Nigiri",
+        descriptionEN: "9 Futomaki, 9 California Rolls, 9 Hosomaki and 5 Nigiri",
         price: "90,000 DT",
         image: "images/83.jpg",
         category: "sushi",
         subcategory: "plateaux",
     },
 
-
     {
         reference: "84",
         nameFR: "Origamix 42 Pièces",
         nameEN: "Origamix 42-Piece Set",
         descriptionFR: "12 Futomaki, 12 California, 12 Hosomaki et 6 Nigiri",
-        descriptionEN: "12 Futomaki, 12 California Rolls, 12 Hosomaki et 6 Nigiri",
+        descriptionEN: "12 Futomaki, 12 California Rolls, 12 Hosomaki and 6 Nigiri",
         price: "118,000 DT",
         image: "images/84.jpg",
         category: "sushi",
         subcategory: "plateaux",
     },
 
-
     {
         reference: "85",
         nameFR: "Origamix 52 Pièces",
         nameEN: "Origamix 52-Piece Set",
         descriptionFR: "15 Futomaki, 15 California, 15 Hosomaki et 7 Nigiri",
-        descriptionEN: "15 Futomaki, 15 California Rolls, 15 Hosomaki et 7 Nigiri",
+        descriptionEN: "15 Futomaki, 15 California Rolls, 15 Hosomaki and 7 Nigiri",
         price: "144,000 DT",
         image: "images/85.jpg",
         category: "sushi",
         subcategory: "plateaux",
     },
 
-
     {
         reference: "211",
         nameFR: "Origamix 12 Pièces Saumon",
         nameEN: "Origamix 12-Piece Salmon set",
-        descriptionFR: "Futomaki saumon,  California saumon,  Hosomaki saumon et  Nigiri saumon",
+        descriptionFR: "Futomaki saumon, California saumon, Hosomaki saumon et Nigiri saumon",
         descriptionEN: "3 salmon Futomaki, 4 salmon California Rolls, 3 salmon Hosomaki and 2 salmon Nigiri",
         price: "44,000 DT",
         image: "images/211.jpg",
         category: "sushi",
         subcategory: "plateaux",
     },
-
 
     {
         reference: "212",
@@ -655,7 +611,6 @@ const products = [
         subcategory: "plateaux",
     },
 
-
     {
         reference: "213",
         nameFR: "Origamix 32 Pièces Saumon",
@@ -667,7 +622,6 @@ const products = [
         category: "sushi",
         subcategory: "plateaux",
     },
-
 
     {
         reference: "214",
@@ -681,7 +635,6 @@ const products = [
         subcategory: "plateaux",
     },
 
-
     {
         reference: "215",
         nameFR: "Origamix 52 Pièces Saumon",
@@ -693,7 +646,6 @@ const products = [
         category: "sushi",
         subcategory: "plateaux",
     },
-
 
     {
         reference: "11",
@@ -707,7 +659,6 @@ const products = [
         subcategory: "sashimis",
     },
 
-
     {
         reference: "12",
         nameFR: "Sashimi Saumon",
@@ -719,7 +670,6 @@ const products = [
         category: "sushi",
         subcategory: "sashimis",
     },
-
 
     {
         reference: "13",
@@ -733,7 +683,6 @@ const products = [
         subcategory: "sashimis",
     },
 
-
     {
         reference: "15",
         nameFR: "Sashimi Daurade",
@@ -745,7 +694,6 @@ const products = [
         category: "sushi",
         subcategory: "sashimis",
     },
-
 
     {
         reference: "17",
@@ -759,7 +707,6 @@ const products = [
         subcategory: "nigiris",
     },
 
-
     {
         reference: "18",
         nameFR: "Nigiri Thon",
@@ -771,7 +718,6 @@ const products = [
         category: "sushi",
         subcategory: "nigiris",
     },
-
 
     {
         reference: "19",
@@ -785,7 +731,6 @@ const products = [
         subcategory: "nigiris",
     },
 
-
     {
         reference: "20",
         nameFR: "Nigiri Daurade",
@@ -797,7 +742,6 @@ const products = [
         category: "sushi",
         subcategory: "nigiris",
     },
-
 
     {
         reference: "21",
@@ -811,7 +755,6 @@ const products = [
         subcategory: "nigiris",
     },
 
-
     {
         reference: "22",
         nameFR: "Nigiri poulpe",
@@ -823,7 +766,6 @@ const products = [
         category: "sushi",
         subcategory: "nigiris",
     },
-
 
     {
         reference: "23",
@@ -837,7 +779,6 @@ const products = [
         subcategory: "nigiris",
     },
 
-
     {
         reference: "24",
         nameFR: "Nigiri Boutargue",
@@ -849,7 +790,6 @@ const products = [
         category: "sushi",
         subcategory: "nigiris",
     },
-
 
     {
         reference: "25",
@@ -863,7 +803,6 @@ const products = [
         subcategory: "nigiris",
     },
 
-
     {
         reference: "26",
         nameFR: "Nigiri Avocat",
@@ -875,7 +814,6 @@ const products = [
         category: "sushi",
         subcategory: "nigiris",
     },
-
 
     {
         reference: "27",
@@ -889,7 +827,6 @@ const products = [
         subcategory: "gunkan-maki",
     },
 
-
     {
         reference: "28",
         nameFR: "Tartare de Saumon Spicy",
@@ -901,7 +838,6 @@ const products = [
         category: "sushi",
         subcategory: "gunkan-maki",
     },
-
 
     {
         reference: "29",
@@ -915,7 +851,6 @@ const products = [
         subcategory: "gunkan-maki",
     },
 
-
     {
         reference: "30",
         nameFR: "Tartare de Thon Piquant",
@@ -927,7 +862,6 @@ const products = [
         category: "sushi",
         subcategory: "gunkan-maki",
     },
-
 
     {
         reference: "33",
@@ -941,7 +875,6 @@ const products = [
         subcategory: "gunkan-maki",
     },
 
-
     {
         reference: "33b",
         nameFR: "Tartare de Thon, Sésame & Gingembre",
@@ -953,7 +886,6 @@ const products = [
         category: "sushi",
         subcategory: "gunkan-maki",
     },
-
 
     {
         reference: "33c",
@@ -967,7 +899,6 @@ const products = [
         subcategory: "gunkan-fusion",
     },
 
-
     {
         reference: "33d",
         nameFR: "Strawberry Salmon",
@@ -979,7 +910,6 @@ const products = [
         category: "sushi",
         subcategory: "gunkan-fusion",
     },
-
 
     {
         reference: "33e",
@@ -993,7 +923,6 @@ const products = [
         subcategory: "gunkan-fusion",
     },
 
-
     {
         reference: "33f",
         nameFR: "Spicy Maguro",
@@ -1005,7 +934,6 @@ const products = [
         category: "sushi",
         subcategory: "gunkan-fusion",
     },
-
 
     {
         reference: "34",
@@ -1019,7 +947,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "34a",
         nameFR: "Maki Concombre Cheese",
@@ -1031,7 +958,6 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
-
 
     {
         reference: "35",
@@ -1045,7 +971,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "35a",
         nameFR: "Maki Avocat Cheese",
@@ -1057,7 +982,6 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
-
 
     {
         reference: "36",
@@ -1071,7 +995,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "37",
         nameFR: "Maki Saumon",
@@ -1083,7 +1006,6 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
-
 
     {
         reference: "37a",
@@ -1097,7 +1019,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "38",
         nameFR: "Maki Thon",
@@ -1109,7 +1030,6 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
-
 
     {
         reference: "39",
@@ -1123,7 +1043,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "40",
         nameFR: "Maki Thon Épicé",
@@ -1135,7 +1054,6 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
-
 
     {
         reference: "42",
@@ -1149,7 +1067,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "42a",
         nameFR: "Maki Saumon Fumé Cheese",
@@ -1162,7 +1079,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "43",
         nameFR: "Maki Tamago",
@@ -1174,8 +1090,7 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
-    
-    
+
     {
         reference: "44",
         nameFR: "Maki Poulpe",
@@ -1187,7 +1102,6 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
-
 
     {
         reference: "45",
@@ -1201,7 +1115,6 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "46",
         nameFR: "Maki Tartare de Poisson Blanc à La Boutargue",
@@ -1214,11 +1127,10 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
     {
         reference: "47",
         nameFR: "Maki Tartare de Daurade à L'Aneth",
-        nameEN: "Sea Bream Tartare Maki with Dill ",
+        nameEN: "Sea Bream Tartare Maki with Dill",
         descriptionFR: "Maki Daurade aux Herbes",
         descriptionEN: "Maki Filled with Sea Bream & Herbs",
         price: "14,000 DT",
@@ -1227,83 +1139,67 @@ const products = [
         subcategory: "hosomaki",
     },
 
-
-    
     {
         reference: "193",
         nameFR: "Kushikatsu Bœuf Fromage",
         nameEN: "Beef Cheese Kushikatsu",
-        descriptionFR:
-            "Bœuf pané et fromage fondant, servi avec une sauce maison.",
-        descriptionEN:
-            "Breaded beef and melted cheese, served with homemade sauce.",
+        descriptionFR: "Bœuf pané et fromage fondant, servi avec une sauce maison.",
+        descriptionEN: "Breaded beef and melted cheese, served with homemade sauce.",
         price: "18,000 DT",
         image: "images/193.jpg",
         category: "plats-chauds",
         subcategory: "kushikatsu"
     },
 
-
     {
         reference: "194",
         nameFR: "Kushikatsu Poulet",
         nameEN: "Chicken Kushikatsu",
-        descriptionFR:
-            "Morceaux de poulet panés et frits à la perfection.",
-        descriptionEN:
-            "Breaded chicken pieces, fried to perfection.",
+        descriptionFR: "Morceaux de poulet panés et frits à la perfection.",
+        descriptionEN: "Breaded chicken pieces, fried to perfection.",
         price: "16 DT",
         image: "images/194.jpg",
         category: "plats-chauds",
         subcategory: "kushikatsu"
     },
 
-
     {
         reference: "195",
         nameFR: "Kushikatsu Crevette",
         nameEN: "Shrimp Kushikatsu",
-        descriptionFR:
-            "Crevettes panées et croustillantes, accompagnées de leur sauce.",
-        descriptionEN:
-            "Crispy breaded shrimp, served with their sauce.",
+        descriptionFR: "Crevettes panées et croustillantes, accompagnées de leur sauce.",
+        descriptionEN: "Crispy breaded shrimp, served with their sauce.",
         price: "20 DT",
         image: "images/195.jpg",
         category: "plats-chauds",
         subcategory: "kushikatsu"
     },
 
-
     {
         reference: "196",
         nameFR: "Yakitori Poulet",
         nameEN: "Chicken Yakitori",
-        descriptionFR:"",
-        descriptionEN:
-            "Grilled chicken skewers, delicately seasoned.",
+        descriptionFR: "",
+        descriptionEN: "Grilled chicken skewers, delicately seasoned.",
         price: "15 DT",
         image: "images/196.jpg",
         category: "plats-chauds",
         subcategory: "yakitori"
     },
 
-
     {
         reference: "197",
         nameFR: "Yakitori Bœuf",
         nameEN: "Beef Yakitori",
         descriptionFR: "",
-        descriptionEN:
-            "Flavorful grilled beef skewers.",
+        descriptionEN: "Flavorful grilled beef skewers.",
         price: "17 DT",
         image: "images/197.jpg",
         category: "plats-chauds",
         subcategory: "yakitori"
-    },
-
+    }
 
 ];
-
 
 
 /* =========================================================
@@ -1328,7 +1224,6 @@ const translations = {
 
     },
 
-
     en: {
 
         searchPlaceholder:
@@ -1348,7 +1243,6 @@ const translations = {
 };
 
 
-
 /* =========================================================
    VARIABLES
    ========================================================= */
@@ -1358,7 +1252,6 @@ let currentLanguage = "fr";
 let currentCategory = "all";
 
 let currentSearch = "";
-
 
 
 /* =========================================================
@@ -1384,14 +1277,11 @@ const categoryColors = {
 };
 
 
-
 /* =========================================================
    COULEUR DE TEXTE LISIBLE SELON LE FOND
    ========================================================= */
 
-function getContrastTextColor(
-    hexColor
-) {
+function getContrastTextColor(hexColor) {
 
     const hex =
         hexColor.replace("#", "");
@@ -1415,7 +1305,6 @@ function getContrastTextColor(
 }
 
 
-
 /* =========================================================
    ÉLÉMENTS HTML
    ========================================================= */
@@ -1425,78 +1314,65 @@ const languageScreen =
         "languageScreen"
     );
 
-
 const menuApp =
     document.getElementById(
         "menuApp"
     );
-
 
 const languageSwitcher =
     document.getElementById(
         "languageSwitcher"
     );
 
-
 const languageChoices =
     document.querySelectorAll(
         ".language-choice"
     );
-
 
 const categoryNavigation =
     document.getElementById(
         "categoryNavigation"
     );
 
-
 const subcategoryNavigation =
     document.getElementById(
         "subcategoryNavigation"
     );
-
 
 const productsContainer =
     document.getElementById(
         "productsContainer"
     );
 
-
 const searchInput =
     document.getElementById(
         "searchInput"
     );
-
 
 const clearSearch =
     document.getElementById(
         "clearSearch"
     );
 
-
 const noResults =
     document.getElementById(
         "noResults"
     );
-
 
 const menuTitle =
     document.getElementById(
         "menuTitle"
     );
 
-
 const menuSubtitle =
     document.getElementById(
         "menuSubtitle"
     );
 
-
 const currentYear =
     document.getElementById(
         "currentYear"
     );
-
 
 
 /* =========================================================
@@ -1511,24 +1387,15 @@ document.addEventListener(
             "no-scroll"
         );
 
-
         const savedLanguage =
             localStorage.getItem(
                 "origamiLanguage"
             );
 
-
         currentYear.textContent =
             new Date().getFullYear();
 
-
         setupEventListeners();
-
-
-        /*
-           Si une langue a déjà été choisie,
-           on affiche directement le menu.
-        */
 
         if (
             savedLanguage === "fr" ||
@@ -1552,7 +1419,6 @@ document.addEventListener(
 
 function setupEventListeners() {
 
-
     languageChoices.forEach(
         button => {
 
@@ -1563,10 +1429,8 @@ function setupEventListeners() {
                     const selectedLanguage =
                         button.dataset.language;
 
-
                     currentLanguage =
                         selectedLanguage;
-
 
                     showMenu();
 
@@ -1577,11 +1441,9 @@ function setupEventListeners() {
     );
 
 
-
     languageSwitcher.addEventListener(
         "click",
         () => {
-
 
             const newLanguage =
 
@@ -1591,7 +1453,6 @@ function setupEventListeners() {
 
                     : "fr";
 
-
             setLanguage(
                 newLanguage
             );
@@ -1600,11 +1461,9 @@ function setupEventListeners() {
     );
 
 
-
     searchInput.addEventListener(
         "input",
         event => {
-
 
             currentSearch =
 
@@ -1612,9 +1471,7 @@ function setupEventListeners() {
                     .toLowerCase()
                     .trim();
 
-
             updateClearButton();
-
 
             renderProducts();
 
@@ -1622,22 +1479,17 @@ function setupEventListeners() {
     );
 
 
-
     clearSearch.addEventListener(
         "click",
         () => {
 
-
             searchInput.value =
                 "";
-
 
             currentSearch =
                 "";
 
-
             updateClearButton();
-
 
             renderProducts();
 
@@ -1647,25 +1499,19 @@ function setupEventListeners() {
 }
 
 
-
 /* =========================================================
    CHANGER LA LANGUE
    ========================================================= */
 
-function setLanguage(
-    language
-) {
-
+function setLanguage(language) {
 
     currentLanguage =
         language;
-
 
     localStorage.setItem(
         "origamiLanguage",
         language
     );
-
 
     languageSwitcher.textContent =
 
@@ -1675,20 +1521,15 @@ function setLanguage(
 
             : "🇬🇧 EN";
 
-
     updateInterfaceTexts();
-
 
     renderCategories();
 
-
     renderSubcategories();
-
 
     renderProducts();
 
 }
-
 
 
 /* =========================================================
@@ -1697,21 +1538,17 @@ function setLanguage(
 
 function showMenu() {
 
-
     document.documentElement.classList.remove(
         "no-scroll"
     );
-
 
     languageScreen.classList.add(
         "hidden"
     );
 
-
     menuApp.classList.remove(
         "hidden"
     );
-
 
     setLanguage(
         currentLanguage
@@ -1720,13 +1557,11 @@ function showMenu() {
 }
 
 
-
 /* =========================================================
    TEXTES INTERFACE
    ========================================================= */
 
 function updateInterfaceTexts() {
-
 
     menuTitle.textContent =
 
@@ -1736,7 +1571,6 @@ function updateInterfaceTexts() {
 
             : "Our Menu";
 
-
     menuSubtitle.textContent =
 
         currentLanguage === "fr"
@@ -1745,32 +1579,27 @@ function updateInterfaceTexts() {
 
             : "Discover our selection";
 
-
     searchInput.placeholder =
 
         translations[
             currentLanguage
         ].searchPlaceholder;
 
-
     const noResultsTitle =
         noResults.querySelector(
             "h2"
         );
-
 
     const noResultsText =
         noResults.querySelector(
             "p"
         );
 
-
     noResultsTitle.textContent =
 
         translations[
             currentLanguage
         ].noResults;
-
 
     noResultsText.textContent =
 
@@ -1781,15 +1610,11 @@ function updateInterfaceTexts() {
 }
 
 
-
 /* =========================================================
    TROUVER UNE CATÉGORIE
    ========================================================= */
 
-function getCategory(
-    categoryId
-) {
-
+function getCategory(categoryId) {
 
     return categoriesOrder.find(
         category =>
@@ -1801,17 +1626,14 @@ function getCategory(
 }
 
 
-
 /* =========================================================
    AFFICHER CATÉGORIES PRINCIPALES
    ========================================================= */
 
 function renderCategories() {
 
-
     categoryNavigation.innerHTML =
         "";
-
 
     const allButton =
 
@@ -1825,16 +1647,13 @@ function renderCategories() {
 
         );
 
-
     categoryNavigation.appendChild(
         allButton
     );
 
 
-
     categoriesOrder.forEach(
         category => {
-
 
             const hasProducts =
 
@@ -1845,7 +1664,6 @@ function renderCategories() {
                         category.id
                 );
 
-
             if (
                 !hasProducts
             ) {
@@ -1853,7 +1671,6 @@ function renderCategories() {
                 return;
 
             }
-
 
             const button =
 
@@ -1867,7 +1684,6 @@ function renderCategories() {
 
                 );
 
-
             categoryNavigation.appendChild(
                 button
             );
@@ -1876,7 +1692,6 @@ function renderCategories() {
     );
 
 }
-
 
 
 /* =========================================================
@@ -1888,16 +1703,13 @@ function createCategoryButton(
     label
 ) {
 
-
     const button =
         document.createElement(
             "button"
         );
 
-
     button.className =
         "category-button";
-
 
     button.textContent =
         label;
@@ -1911,12 +1723,10 @@ function createCategoryButton(
             "active"
         );
 
-
         const activeColor =
 
             categoryColors[category] ||
             categoryColors.all;
-
 
         button.style.backgroundColor =
             activeColor;
@@ -1936,19 +1746,14 @@ function createCategoryButton(
         "click",
         () => {
 
-
             currentCategory =
                 category;
 
-
             renderCategories();
-
 
             renderSubcategories();
 
-
             renderProducts();
-
 
             window.scrollTo({
 
@@ -1967,13 +1772,11 @@ function createCategoryButton(
 }
 
 
-
 /* =========================================================
    AFFICHER LES SOUS-CATÉGORIES
    ========================================================= */
 
 function renderSubcategories() {
-
 
     subcategoryNavigation.innerHTML =
         "";
@@ -1983,16 +1786,13 @@ function renderSubcategories() {
         currentCategory === "all"
     ) {
 
-
         subcategoryNavigation.classList.add(
             "hidden"
         );
 
-
         return;
 
     }
-
 
 
     const subcategories =
@@ -2002,21 +1802,17 @@ function renderSubcategories() {
         ] || [];
 
 
-
     if (
         subcategories.length === 0
     ) {
-
 
         subcategoryNavigation.classList.add(
             "hidden"
         );
 
-
         return;
 
     }
-
 
 
     subcategoryNavigation.classList.remove(
@@ -2036,16 +1832,17 @@ function renderSubcategories() {
     );
 
 
+    /* =====================================================
+       BOUTON "TOUT"
+       ===================================================== */
 
     const allButton =
         document.createElement(
             "button"
         );
 
-
     allButton.className =
         "subcategory-button active";
-
 
     allButton.textContent =
 
@@ -2057,6 +1854,15 @@ function renderSubcategories() {
     allButton.addEventListener(
         "click",
         () => {
+
+            /*
+               On force "Tout" à devenir
+               le seul bouton actif.
+            */
+
+            setActiveSubcategory(
+                allButton
+            );
 
 
             const categoryTitle =
@@ -2085,10 +1891,12 @@ function renderSubcategories() {
     );
 
 
+    /* =====================================================
+       AUTRES SOUS-CATÉGORIES
+       ===================================================== */
 
     subcategories.forEach(
         subcategory => {
-
 
             const hasProducts =
 
@@ -2139,7 +1947,6 @@ function renderSubcategories() {
                 "click",
                 () => {
 
-
                     const target =
 
                         document.getElementById(
@@ -2152,7 +1959,6 @@ function renderSubcategories() {
                     if (
                         target
                     ) {
-
 
                         scrollToElement(
                             target
@@ -2178,6 +1984,7 @@ function renderSubcategories() {
 
 }
 
+
 /* =========================================================
    SCROLL VERS UNE SOUS-CATÉGORIE
    ========================================================= */
@@ -2190,34 +1997,24 @@ function scrollToElement(element) {
         );
 
 
-    if (!subcategoryBar || !element) {
+    if (
+        !subcategoryBar ||
+        !element
+    ) {
+
         return;
+
     }
 
-
-    /*
-       On récupère la position ABSOLUE du titre
-       dans toute la page.
-    */
 
     const elementTop =
         element.getBoundingClientRect().top +
         window.scrollY;
 
 
-    /*
-       On récupère la hauteur actuelle
-       de la barre des sous-catégories.
-    */
-
     const barHeight =
         subcategoryBar.getBoundingClientRect().height;
 
-
-    /*
-       On place le titre juste sous
-       la barre sticky.
-    */
 
     const targetPosition =
         elementTop -
@@ -2241,7 +2038,6 @@ function scrollToElement(element) {
 }
 
 
-
 /* =========================================================
    ACTIVER UNE SOUS-CATÉGORIE
    ========================================================= */
@@ -2249,7 +2045,6 @@ function scrollToElement(element) {
 function setActiveSubcategory(
     activeButton
 ) {
-
 
     const buttons =
 
@@ -2261,10 +2056,23 @@ function setActiveSubcategory(
     buttons.forEach(
         button => {
 
-
             button.classList.remove(
                 "active"
             );
+
+            /*
+               On retire également les styles
+               inline éventuellement ajoutés.
+            */
+
+            button.style.backgroundColor =
+                "";
+
+            button.style.borderColor =
+                "";
+
+            button.style.color =
+                "";
 
         }
     );
@@ -2274,9 +2082,7 @@ function setActiveSubcategory(
         "active"
     );
 
-
 }
-
 
 
 /* =========================================================
@@ -2285,10 +2091,8 @@ function setActiveSubcategory(
 
 function getFilteredProducts() {
 
-
     return products.filter(
         product => {
-
 
             const matchesCategory =
 
@@ -2296,7 +2100,6 @@ function getFilteredProducts() {
 
                 product.category ===
                 currentCategory;
-
 
 
             const nameFR =
@@ -2327,7 +2130,6 @@ function getFilteredProducts() {
 
                 product.reference
                     .toLowerCase();
-
 
 
             const matchesSearch =
@@ -2367,13 +2169,11 @@ function getFilteredProducts() {
 }
 
 
-
 /* =========================================================
    AFFICHER LES PRODUITS
    ========================================================= */
 
 function renderProducts() {
-
 
     productsContainer.innerHTML =
         "";
@@ -2387,11 +2187,9 @@ function renderProducts() {
         filteredProducts.length === 0
     ) {
 
-
         noResults.classList.remove(
             "hidden"
         );
-
 
         return;
 
@@ -2403,15 +2201,12 @@ function renderProducts() {
     );
 
 
-
     if (
         currentCategory === "all"
     ) {
 
-
         categoriesOrder.forEach(
             category => {
-
 
                 renderCategory(
 
@@ -2427,7 +2222,6 @@ function renderProducts() {
 
     } else {
 
-
         renderCategory(
 
             currentCategory,
@@ -2441,7 +2235,6 @@ function renderProducts() {
 }
 
 
-
 /* =========================================================
    AFFICHER UNE CATÉGORIE
    ========================================================= */
@@ -2450,7 +2243,6 @@ function renderCategory(
     categoryId,
     productList
 ) {
-
 
     const category =
         getCategory(
@@ -2465,7 +2257,6 @@ function renderCategory(
         return;
 
     }
-
 
 
     const categoryProducts =
@@ -2485,7 +2276,6 @@ function renderCategory(
         return;
 
     }
-
 
 
     const categoryTitle =
@@ -2514,7 +2304,6 @@ function renderCategory(
     );
 
 
-
     const orderedSubcategories =
 
         subcategoriesOrder[
@@ -2522,10 +2311,8 @@ function renderCategory(
         ] || [];
 
 
-
     orderedSubcategories.forEach(
         subcategory => {
-
 
             const subcategoryProducts =
 
@@ -2544,7 +2331,6 @@ function renderCategory(
                 return;
 
             }
-
 
 
             const subcategoryTitle =
@@ -2571,6 +2357,7 @@ function renderCategory(
             subcategoryTitle.style.color =
                 subcategoryColor;
 
+
             subcategoryTitle.style.borderLeftColor =
                 subcategoryColor;
 
@@ -2595,7 +2382,6 @@ function renderCategory(
             );
 
 
-
             const grid =
 
                 createProductGrid(
@@ -2615,7 +2401,6 @@ function renderCategory(
 }
 
 
-
 /* =========================================================
    CRÉER GRILLE PRODUITS
    ========================================================= */
@@ -2623,7 +2408,6 @@ function renderCategory(
 function createProductGrid(
     productList
 ) {
-
 
     const grid =
         document.createElement(
@@ -2637,7 +2421,6 @@ function createProductGrid(
 
     productList.forEach(
         product => {
-
 
             const card =
 
@@ -2659,7 +2442,6 @@ function createProductGrid(
 }
 
 
-
 /* =========================================================
    CRÉER CARTE PRODUIT
    ========================================================= */
@@ -2667,7 +2449,6 @@ function createProductGrid(
 function createProductCard(
     product
 ) {
-
 
     const card =
         document.createElement(
@@ -2703,14 +2484,11 @@ function createProductCard(
 
             ? `
                 <p class="product-description">
-
                     ${productDescription}
-
                 </p>
             `
 
             : "";
-
 
 
     card.innerHTML = `
@@ -2769,29 +2547,24 @@ function createProductCard(
 }
 
 
-
 /* =========================================================
    BOUTON EFFACER RECHERCHE
    ========================================================= */
 
 function updateClearButton() {
 
-
     if (
         currentSearch.length > 0
     ) {
 
-
         clearSearch.style.display =
             "block";
 
-
     } else {
-
 
         clearSearch.style.display =
             "none";
 
     }
 
-   }
+}
