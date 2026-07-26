@@ -699,8 +699,8 @@ const products = [
         reference: "11",
         nameFR: "Sashimi Thon",
         nameEN: "Tuna Sashimi",
-        descriptionFR: "Tranches de Thon Rouge de Qualité Supérieure (Selon Arrivage)",
-        descriptionEN: "Premium Bluefin Tuna Slices (Subject to Availability)",
+        descriptionFR: "Tranches de Thon Rouge de Qualité Supérieure (selon arrivage)",
+        descriptionEN: "Premium Bluefin Tuna Slices (subject to availability)",
         price: "12,000 DT",
         image: "images/11.jpg",
         category: "sushi",
@@ -874,6 +874,136 @@ const products = [
         image: "images/26.jpg",
         category: "sushi",
         subcategory: "nigiris",
+    },
+
+
+    {
+        reference: "27",
+        nameFR: "Tartare de Poisson Blanc à l'Aneth",
+        nameEN: "White Fish Tartare with Dill",
+        descriptionFR: "Poisson Blanc aux Herbes dans Nori",
+        descriptionEN: "White Fish with Herbs Wrapped in Nori",
+        price: "11,000 DT",
+        image: "images/27.jpg",
+        category: "sushi",
+        subcategory: "gunkan-maki",
+    },
+
+
+    {
+        reference: "28",
+        nameFR: "Tartare de Saumon Spicy",
+        nameEN: "Spicy Salmon Tartare",
+        descriptionFR: "Saumon + Sauce Épicée dans Nori",
+        descriptionEN: "Salmon with Spicy Sauce Wrapped in Nori",
+        price: "13,000 DT",
+        image: "images/28.jpg",
+        category: "sushi",
+        subcategory: "gunkan-maki",
+    },
+
+
+    {
+        reference: "29",
+        nameFR: "Tartare de Deux Saumons au Gingembre",
+        nameEN: "Two-Salmon Tartare with Ginger",
+        descriptionFR: "Mélange Saumon Frais/Fumé au Gingembre dans Nori",
+        descriptionEN: "Fresh & Smoked Salmon with Ginger Wrapped in Nori",
+        price: "15,000 DT",
+        image: "images/29.jpg",
+        category: "sushi",
+        subcategory: "gunkan-maki",
+    },
+
+
+    {
+        reference: "30",
+        nameFR: "Tartare de Thon Piquant",
+        nameEN: "Spicy Tuna Tartare",
+        descriptionFR: "Thon Rouge Épicé dans Nori (selon arrivage)",
+        descriptionEN: "Spicy Bluefin Tuna Wrapped in Nori (subject to availability)",
+        price: "11,000 DT",
+        image: "images/30.jpg",
+        category: "sushi",
+        subcategory: "gunkan-maki",
+    },
+
+
+    {
+        reference: "33",
+        nameFR: "Tartare de Daurade à La Boutarge",
+        nameEN: "Sea Bream Tartare with Bottarga",
+        descriptionFR: "Daurade aux Œufs de Mulet dans Nori",
+        descriptionEN: "Sea Bream with Mullet Roe Wrapped in Nori",
+        price: "16,000 DT",
+        image: "images/33.jpg",
+        category: "sushi",
+        subcategory: "gunkan-maki",
+    },
+
+
+    {
+        reference: "33b",
+        nameFR: "Tartare de Thon, Sésame & Gingembre",
+        nameEN: "Tuna Tartare with Sesame & Ginger",
+        descriptionFR: "Thon au Sésame et Gingembre dans Nori (selon arrivage)",
+        descriptionEN: "Tuna with Sesame & Ginger Wrapped in Nori (subject to availability)",
+        price: "11,000 DT",
+        image: "images/33b.jpg",
+        category: "sushi",
+        subcategory: "gunkan-maki",
+    },
+
+
+    {
+        reference: "33c",
+        nameFR: "Mango Salmon",
+        nameEN: "Mango Salmon",
+        descriptionFR: "Tartare de Saumon Épicé, Mangue, Flocons Crispy, Saumon",
+        descriptionEN: "Spicy Salmon Tartare with Mango & Crispy Flakes, Wrapped in Salmon",
+        price: "19,000 DT",
+        image: "images/33c.jpg",
+        category: "sushi",
+        subcategory: "gunkan-fusion",
+    },
+
+
+    {
+        reference: "33d",
+        nameFR: "Strawberry Salmon",
+        nameEN: "Strawberry Salmon",
+        descriptionFR: "Tartare de Saumon Épicé, Fraise, Flocons Crispy, Saumon",
+        descriptionEN: "Spicy Salmon Tartare with Strawberry & Crispy Flakes, Wrapped in Salmon",
+        price: "19,000 DT",
+        image: "images/33d.jpg",
+        category: "sushi",
+        subcategory: "gunkan-fusion",
+    },
+
+
+    {
+        reference: "33e",
+        nameFR: "Thai tai",
+        nameEN: "Thai tai",
+        descriptionFR: "Daurade Marinée, Tartare de Daurade à La Mangue",
+        descriptionEN: "Marinated Sea Bream with Mango Sea Bream Tartare",
+        price: "19,000 DT",
+        image: "images/33e.jpg",
+        category: "sushi",
+        subcategory: "gunkan-fusion",
+    },
+
+
+    {
+        reference: "33f",
+        nameFR: "Spicy Maguro",
+        nameEN: "Spicy Maguro",
+        descriptionFR: "Tartare de Thon Épicé, Thon",
+        descriptionEN: "Spicy Tuna Tartare Wrapped in Tuna",
+        price: "15,000 DT",
+        image: "images/33f.jpg",
+        category: "sushi",
+        subcategory: "gunkan-fusion",
     },
 
 
