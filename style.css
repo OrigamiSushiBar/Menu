@@ -966,7 +966,7 @@ body {
         1.4;
 
     margin-bottom:
-        7px;
+        0;
 
 }
 
@@ -987,8 +987,11 @@ body {
     color:
         var(--text-light);
 
+    margin-top:
+        auto;
+
     margin-bottom:
-        12px;
+        auto;
 
 }
 
@@ -1010,7 +1013,7 @@ body {
         var(--gold);
 
     margin-top:
-        auto;
+        0;
 
 }
 
@@ -1237,6 +1240,12 @@ body {
 
         line-height:
             1.4;
+
+        margin-top:
+            auto;
+
+        margin-bottom:
+            auto;
 
     }
 
