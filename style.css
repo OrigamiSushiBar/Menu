@@ -90,7 +90,8 @@ body {
 
 .hidden {
 
-    display: none !important;
+    display:
+        none !important;
 
 }
 
@@ -158,13 +159,13 @@ body {
         auto;
 
     max-width:
-        300px;
+        350px;
+
+    max-height:
+        160px;
 
     height:
         auto;
-
-    max-height:
-        150px;
 
     object-fit:
         contain;
@@ -284,7 +285,7 @@ body {
         center;
 
     padding:
-        35px 20px 25px;
+        25px 20px 25px;
 
     background:
         var(--background);
@@ -302,19 +303,19 @@ body {
         auto;
 
     max-width:
-        360px;
+        300px;
+
+    max-height:
+        130px;
 
     height:
         auto;
-
-    max-height:
-        140px;
 
     object-fit:
         contain;
 
     margin:
-        0 auto 10px;
+        -5px auto 10px;
 
 }
 
@@ -1134,16 +1135,20 @@ body {
 ) {
 
 
+    /* =====================================================
+       LOGO ÉCRAN DE LANGUE — MOBILE
+       ===================================================== */
+
     .language-box .logo {
 
         max-width:
-            270px;
+            320px;
 
         max-height:
-            120px;
+            150px;
 
-        margin-bottom:
-            20px;
+        margin:
+            0 auto 20px;
 
     }
 
@@ -1178,10 +1183,14 @@ body {
     }
 
 
+    /* =====================================================
+       HEADER — MOBILE
+       ===================================================== */
+
     .site-header {
 
-        padding-top:
-            70px;
+        padding:
+            20px 15px 20px;
 
     }
 
@@ -1197,16 +1206,18 @@ body {
     }
 
 
+    /* LOGO PRINCIPAL — MOBILE */
+
     .header-content .logo {
 
         max-width:
             280px;
 
         max-height:
-            100px;
+            120px;
 
-        margin-bottom:
-            10px;
+        margin:
+            -10px auto 5px;
 
     }
 
