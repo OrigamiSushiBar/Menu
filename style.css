@@ -1,1287 +1,119 @@
 /* =========================================================
-ORIGAMI SUSHI BAR — MENU QR
-STYLE.CSS
-========================================================= */
+   ORIGAMI SUSHI BAR — MENU QR
+   STYLE.CSS
+   ========================================================= */
+
 
 /* =========================================================
-VARIABLES
-========================================================= */
+   VARIABLES
+   ========================================================= */
 
 :root {
 
-```
---background:
-    #f7f5f1;
+    --background:
+        #f7f5f1;
 
---background-dark:
-    #111111;
+    --background-dark:
+        #111111;
 
---text:
-    #1a1a1a;
+    --text:
+        #1a1a1a;
 
---text-light:
-    #777777;
+    --text-light:
+        #777777;
 
---white:
-    #ffffff;
+    --white:
+        #ffffff;
 
---gold:
-    #b08d57;
+    --gold:
+        #b08d57;
 
---border:
-    #e5e1da;
+    --border:
+        #e5e1da;
 
---font-main:
-    Arial,
-    Helvetica,
-    sans-serif;
-```
+    --font-main:
+        Arial,
+        Helvetica,
+        sans-serif;
 
 }
 
+
+
 /* =========================================================
-RESET
-========================================================= */
+   RESET
+   ========================================================= */
 
 * {
 
-  margin:
-  0;
+    margin: 0;
 
-  padding:
-  0;
+    padding: 0;
 
-  box-sizing:
-  border-box;
+    box-sizing: border-box;
 
 }
+
+
 
 html {
 
-```
-scroll-behavior:
-    smooth;
+    scroll-behavior: smooth;
 
-scroll-padding-top:
-    150px;
-```
+    scroll-padding-top: 150px;
 
 }
+
+
 
 body {
 
-```
-font-family:
-    var(--font-main);
+    font-family:
+        var(--font-main);
 
-background:
-    var(--background);
+    background:
+        var(--background);
 
-color:
-    var(--text);
+    color:
+        var(--text);
 
-min-height:
-    100vh;
-```
+    min-height:
+        100vh;
 
 }
 
+
+
 /* =========================================================
-UTILITAIRE
-========================================================= */
+   UTILITAIRE
+   ========================================================= */
 
 .hidden {
 
-```
-display:
-    none !important;
-```
+    display:
+        none !important;
 
 }
 
+
+
 /* =========================================================
-ÉCRAN DE CHOIX DE LA LANGUE
-========================================================= */
+   ÉCRAN DE LANGUE
+   ========================================================= */
 
 .language-screen {
 
-```
-position:
-    fixed;
+    position:
+        fixed;
 
-inset:
-    0;
+    inset:
+        0;
 
-z-index:
-    9999;
-
-display:
-    flex;
-
-align-items:
-    center;
-
-justify-content:
-    center;
-
-background:
-    var(--background);
-
-padding:
-    20px;
-```
-
-}
-
-.language-box {
-
-```
-width:
-    100%;
-
-max-width:
-    500px;
-
-display:
-    flex;
-
-flex-direction:
-    column;
-
-align-items:
-    center;
-
-justify-content:
-    center;
-
-text-align:
-    center;
-```
-
-}
-
-/* =========================================================
-LOGO — ÉCRAN DE LANGUE
-========================================================= */
-
-.language-box .logo {
-
-```
-display:
-    block;
-
-width:
-    auto;
-
-height:
-    auto;
-
-max-width:
-    350px;
-
-max-height:
-    160px;
-
-object-fit:
-    contain;
-
-margin:
-    0 auto 25px;
-```
-
-}
-
-/* =========================================================
-BIENVENUE
-========================================================= */
-
-.language-box h1 {
-
-```
-display:
-    block;
-
-width:
-    100%;
-
-font-size:
-    28px;
-
-line-height:
-    1.2;
-
-text-align:
-    center;
-
-margin:
-    0 0 8px;
-```
-
-}
-
-/* =========================================================
-CHOISISSEZ VOTRE LANGUE
-========================================================= */
-
-.language-box p {
-
-```
-display:
-    block;
-
-width:
-    100%;
-
-color:
-    var(--text-light);
-
-font-size:
-    16px;
-
-line-height:
-    1.4;
-
-text-align:
-    center;
-
-margin:
-    0 0 30px;
-```
-
-}
-
-/* =========================================================
-BOUTONS DE LANGUE
-========================================================= */
-
-.language-buttons {
-
-```
-display:
-    flex;
-
-flex-direction:
-    row;
-
-align-items:
-    center;
-
-justify-content:
-    center;
-
-gap:
-    15px;
-
-width:
-    100%;
-```
-
-}
-
-.language-choice {
-
-```
-display:
-    block;
-
-width:
-    180px;
-
-max-width:
-    180px;
-
-flex:
-    none;
-
-padding:
-    18px;
-
-border:
-    1px solid var(--border);
-
-background:
-    var(--white);
-
-color:
-    var(--text);
-
-cursor:
-    pointer;
-
-font-size:
-    17px;
-
-text-align:
-    center;
-
-border-radius:
-    4px;
-
-transition:
-    0.25s;
-```
-
-}
-
-.language-choice:hover {
-
-```
-border-color:
-    var(--gold);
-
-transform:
-    translateY(
-        -2px
-    );
-```
-
-}
-
-.language-choice span {
-
-```
-display:
-    block;
-
-margin-top:
-    8px;
-```
-
-}
-
-/* =========================================================
-HEADER
-========================================================= */
-
-.site-header {
-
-```
-position:
-    relative;
-
-text-align:
-    center;
-
-padding:
-    25px 20px 25px;
-
-background:
-    var(--background);
-```
-
-}
-
-.header-content .logo {
-
-```
-display:
-    block;
-
-width:
-    auto;
-
-max-width:
-    300px;
-
-max-height:
-    130px;
-
-height:
-    auto;
-
-object-fit:
-    contain;
-
-margin:
-    -5px auto 10px;
-```
-
-}
-
-.header-content h1 {
-
-```
-font-size:
-    30px;
-
-margin-bottom:
-    8px;
-```
-
-}
-
-.header-content p {
-
-```
-color:
-    var(--text-light);
-```
-
-}
-
-/* =========================================================
-BOUTON LANGUE
-========================================================= */
-
-.language-switcher {
-
-```
-position:
-    absolute;
-
-top:
-    20px;
-
-left:
-    20px;
-
-border:
-    1px solid var(--border);
-
-background:
-    var(--white);
-
-padding:
-    8px 12px;
-
-cursor:
-    pointer;
-
-font-size:
-    13px;
-
-border-radius:
-    4px;
-
-transition:
-    0.2s;
-```
-
-}
-
-.language-switcher:hover {
-
-```
-border-color:
-    var(--gold);
-```
-
-}
-
-/* =========================================================
-RECHERCHE
-========================================================= */
-
-.search-container {
-
-```
-max-width:
-    700px;
-
-margin:
-    0 auto 25px;
-
-padding:
-    0 20px;
-```
-
-}
-
-.search-box {
-
-```
-position:
-    relative;
-```
-
-}
-
-.search-box input {
-
-```
-width:
-    100%;
-
-padding:
-    14px 45px 14px 18px;
-
-border:
-    1px solid var(--border);
-
-background:
-    var(--white);
-
-outline:
-    none;
-
-font-size:
-    15px;
-
-border-radius:
-    5px;
-```
-
-}
-
-.search-box input:focus {
-
-```
-border-color:
-    var(--gold);
-```
-
-}
-
-.clear-search {
-
-```
-position:
-    absolute;
-
-right:
-    12px;
-
-top:
-    50%;
-
-transform:
-    translateY(
-        -50%
-    );
-
-display:
-    none;
-
-border:
-    none;
-
-background:
-    none;
-
-font-size:
-    22px;
-
-color:
-    var(--text-light);
-
-cursor:
-    pointer;
-```
-
-}
-
-/* =========================================================
-CATÉGORIES PRINCIPALES
-========================================================= */
-
-.category-navigation {
-
-```
-display:
-    flex;
-
-gap:
-    10px;
-
-overflow-x:
-    auto;
-
-padding:
-    0 20px 15px;
-
-max-width:
-    1200px;
-
-margin:
-    0 auto;
-
-scrollbar-width:
-    none;
-```
-
-}
-
-.category-navigation::-webkit-scrollbar {
-
-```
-display:
-    none;
-```
-
-}
-
-.category-button {
-
-```
-flex:
-    0 0 auto;
-
-padding:
-    10px 17px;
-
-border:
-    1px solid var(--border);
-
-background:
-    var(--white);
-
-color:
-    var(--text);
-
-cursor:
-    pointer;
-
-white-space:
-    nowrap;
-
-font-size:
-    14px;
-
-border-radius:
-    4px;
-
-transition:
-    0.2s;
-```
-
-}
-
-.category-button:hover {
-
-```
-border-color:
-    var(--gold);
-```
-
-}
-
-.category-button.active {
-
-```
-background:
-    var(--text);
-
-color:
-    var(--white);
-
-border-color:
-    var(--text);
-```
-
-}
-
-/* =========================================================
-NAVIGATION SOUS-CATÉGORIES
-========================================================= */
-
-.subcategory-navigation {
-
-```
-position:
-    sticky;
-
-top:
-    0;
-
-z-index:
-    100;
-
-display:
-    flex;
-
-gap:
-    8px;
-
-overflow-x:
-    auto;
-
-padding:
-    10px 20px;
-
-background:
-    rgba(
-        247,
-        245,
-        241,
-        0.96
-    );
-
-border-top:
-    1px solid var(--border);
-
-border-bottom:
-    1px solid var(--border);
-
-backdrop-filter:
-    blur(10px);
-
-scrollbar-width:
-    none;
-```
-
-}
-
-.subcategory-navigation::-webkit-scrollbar {
-
-```
-display:
-    none;
-```
-
-}
-
-.subcategory-button {
-
-```
-flex:
-    0 0 auto;
-
-padding:
-    8px 15px;
-
-border:
-    none;
-
-background:
-    transparent;
-
-color:
-    var(--text-light);
-
-cursor:
-    pointer;
-
-white-space:
-    nowrap;
-
-font-size:
-    13px;
-
-transition:
-    0.2s;
-```
-
-}
-
-.subcategory-button:hover {
-
-```
-color:
-    var(--text);
-```
-
-}
-
-.subcategory-button.active {
-
-```
-color:
-    var(--text);
-
-font-weight:
-    700;
-```
-
-}
-
-.subcategory-button.active::after {
-
-```
-content:
-    "";
-
-display:
-    block;
-
-height:
-    2px;
-
-background:
-    var(--gold);
-
-margin-top:
-    5px;
-```
-
-}
-
-/* =========================================================
-CONTENEUR PRODUITS
-========================================================= */
-
-.products-container {
-
-```
-max-width:
-    1200px;
-
-margin:
-    0 auto;
-
-padding:
-    25px 20px 60px;
-```
-
-}
-
-/* =========================================================
-TITRE CATÉGORIE PRINCIPALE
-========================================================= */
-
-.category-title {
-
-```
-font-size:
-    26px;
-
-font-weight:
-    700;
-
-letter-spacing:
-    2px;
-
-text-transform:
-    uppercase;
-
-margin:
-    35px 0 25px;
-
-padding-bottom:
-    12px;
-
-border-bottom:
-    1px solid var(--border);
-
-scroll-margin-top:
-    70px;
-```
-
-}
-
-/* =========================================================
-TITRE SOUS-CATÉGORIE
-========================================================= */
-
-.subcategory-title {
-
-```
-font-size:
-    17px;
-
-font-weight:
-    700;
-
-text-transform:
-    uppercase;
-
-letter-spacing:
-    1.5px;
-
-margin:
-    35px 0 18px;
-
-padding-left:
-    12px;
-
-border-left:
-    3px solid var(--gold);
-```
-
-}
-
-/* =========================================================
-GRILLE PRODUITS
-========================================================= */
-
-.products-grid {
-
-```
-display:
-    grid;
-
-grid-template-columns:
-    repeat(
-        auto-fill,
-        minmax(
-            220px,
-            1fr
-        )
-    );
-
-gap:
-    20px;
-```
-
-}
-
-/* =========================================================
-CARTE PRODUIT
-========================================================= */
-
-.product-card {
-
-```
-background:
-    var(--white);
-
-border:
-    1px solid var(--border);
-
-overflow:
-    hidden;
-
-display:
-    flex;
-
-flex-direction:
-    column;
-
-transition:
-    transform 0.25s,
-    box-shadow 0.25s;
-```
-
-}
-
-.product-card:hover {
-
-```
-transform:
-    translateY(
-        -3px
-    );
-
-box-shadow:
-    0 8px 25px
-    rgba(
-        0,
-        0,
-        0,
-        0.08
-    );
-```
-
-}
-
-/* =========================================================
-IMAGE PRODUIT
-========================================================= */
-
-.product-image-container {
-
-```
-position:
-    relative;
-
-width:
-    100%;
-
-aspect-ratio:
-    1 / 1;
-
-background:
-    #eeeeee;
-```
-
-}
-
-.product-image {
-
-```
-width:
-    100%;
-
-height:
-    100%;
-
-object-fit:
-    cover;
-
-display:
-    block;
-```
-
-}
-
-.product-reference {
-
-```
-position:
-    absolute;
-
-top:
-    10px;
-
-left:
-    10px;
-
-background:
-    rgba(
-        0,
-        0,
-        0,
-        0.7
-    );
-
-color:
-    white;
-
-padding:
-    5px 8px;
-
-font-size:
-    12px;
-```
-
-}
-
-/* =========================================================
-INFOS PRODUIT
-========================================================= */
-
-.product-info {
-
-```
-padding:
-    15px;
-
-display:
-    flex;
-
-flex-direction:
-    column;
-
-flex:
-    1;
-```
-
-}
-
-/* =========================================================
-NOM PRODUIT
-========================================================= */
-
-.product-name {
-
-```
-font-size:
-    15px;
-
-line-height:
-    1.4;
-
-margin-bottom:
-    0;
-```
-
-}
-
-/* =========================================================
-DESCRIPTION PRODUIT
-========================================================= */
-
-.product-description {
-
-```
-font-size:
-    13px;
-
-line-height:
-    1.5;
-
-color:
-    var(--text-light);
-
-margin-top:
-    auto;
-
-margin-bottom:
-    auto;
-
-padding-top:
-    15px;
-
-padding-bottom:
-    15px;
-```
-
-}
-
-/* =========================================================
-PRIX
-========================================================= */
-
-.product-price {
-
-```
-font-size:
-    15px;
-
-font-weight:
-    700;
-
-color:
-    var(--gold);
-
-margin-top:
-    0;
-```
-
-}
-
-/* =========================================================
-AUCUN RÉSULTAT
-========================================================= */
-
-.no-results {
-
-```
-text-align:
-    center;
-
-padding:
-    80px 20px;
-```
-
-}
-
-.no-results h2 {
-
-```
-margin-bottom:
-    10px;
-```
-
-}
-
-.no-results p {
-
-```
-color:
-    var(--text-light);
-```
-
-}
-
-/* =========================================================
-FOOTER
-========================================================= */
-
-.site-footer {
-
-```
-text-align:
-    center;
-
-padding:
-    40px 20px;
-
-border-top:
-    1px solid var(--border);
-
-color:
-    var(--text-light);
-```
-
-}
-
-.site-footer .logo {
-
-```
-color:
-    var(--text);
-
-font-weight:
-    700;
-
-letter-spacing:
-    4px;
-
-margin-bottom:
-    10px;
-```
-
-}
-
-/* =========================================================
-MOBILE
-========================================================= */
-
-@media (
-max-width: 600px
-) {
-
-```
-/* =====================================================
-   ÉCRAN DE LANGUE — MOBILE
-   ===================================================== */
-
-.language-box {
-
-    width:
-        100%;
-
-    max-width:
-        100%;
-
-}
-
-
-.language-box .logo {
-
-    max-width:
-        300px;
-
-    max-height:
-        140px;
-
-    margin:
-        0 auto 20px;
-
-}
-
-
-.language-box h1 {
-
-    width:
-        100%;
-
-    font-size:
-        24px;
-
-    text-align:
-        center;
-
-    margin:
-        0 0 8px;
-
-}
-
-
-.language-box p {
-
-    width:
-        100%;
-
-    font-size:
-        15px;
-
-    text-align:
-        center;
-
-    margin:
-        0 0 25px;
-
-}
-
-
-.language-buttons {
+    z-index:
+        9999;
 
     display:
         flex;
-
-    flex-direction:
-        column;
 
     align-items:
         center;
@@ -1289,187 +121,1231 @@ max-width: 600px
     justify-content:
         center;
 
+    background:
+        var(--background);
+
+    padding:
+        20px;
+
+}
+
+
+
+.language-box {
+
     width:
         100%;
 
-    gap:
-        12px;
+    max-width:
+        450px;
+
+    text-align:
+        center;
 
 }
+
+
+
+/* =========================================================
+   LOGO — ÉCRAN DE LANGUE
+   ========================================================= */
+
+.language-box .logo {
+
+    display:
+        block;
+
+    width:
+        280px;
+
+    max-width:
+        90%;
+
+    height:
+        auto;
+
+    object-fit:
+        contain;
+
+    margin:
+        0 auto 35px;
+
+}
+
+
+
+/* =========================================================
+   TITRE ÉCRAN DE LANGUE
+   ========================================================= */
+
+.language-box h1 {
+
+    font-size:
+        28px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+
+.language-box p {
+
+    color:
+        var(--text-light);
+
+    margin-bottom:
+        30px;
+
+}
+
+
+
+/* =========================================================
+   BOUTONS DE LANGUE
+   ========================================================= */
+
+.language-buttons {
+
+    display:
+        flex;
+
+    gap:
+        15px;
+
+    justify-content:
+        center;
+
+}
+
 
 
 .language-choice {
 
-    width:
-        100%;
+    flex:
+        1;
 
     max-width:
-        300px;
+        180px;
 
-    flex:
-        none;
+    padding:
+        18px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--white);
+
+    cursor:
+        pointer;
+
+    font-size:
+        17px;
+
+    transition:
+        0.25s;
 
 }
 
 
-/* =====================================================
-   HEADER — MOBILE
-   ===================================================== */
+
+.language-choice:hover {
+
+    border-color:
+        var(--gold);
+
+    transform:
+        translateY(
+            -2px
+        );
+
+}
+
+
+
+.language-choice span {
+
+    display:
+        block;
+
+    margin-top:
+        8px;
+
+}
+
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .site-header {
 
+    position:
+        relative;
+
+    text-align:
+        center;
+
     padding:
-        20px 15px 20px;
+        25px 20px 25px;
+
+    background:
+        var(--background);
 
 }
 
 
-.language-switcher {
 
-    top:
-        15px;
-
-    left:
-        15px;
-
-}
-
+/* =========================================================
+   LOGO — HEADER PRINCIPAL
+   ========================================================= */
 
 .header-content .logo {
 
-    max-width:
-        280px;
+    display:
+        block;
 
-    max-height:
-        120px;
+    width:
+        240px;
+
+    max-width:
+        80%;
+
+    height:
+        auto;
+
+    object-fit:
+        contain;
 
     margin:
-        -10px auto 5px;
+        -15px auto 15px;
 
 }
+
 
 
 .header-content h1 {
 
     font-size:
-        25px;
+        30px;
+
+    margin-bottom:
+        8px;
 
 }
 
 
-/* =====================================================
-   NAVIGATION — MOBILE
-   ===================================================== */
+
+.header-content p {
+
+    color:
+        var(--text-light);
+
+}
+
+
+
+/* =========================================================
+   BOUTON LANGUE
+   ========================================================= */
+
+.language-switcher {
+
+    position:
+        absolute;
+
+    top:
+        20px;
+
+    left:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--white);
+
+    padding:
+        8px 12px;
+
+    cursor:
+        pointer;
+
+    font-size:
+        13px;
+
+    border-radius:
+        4px;
+
+    transition:
+        0.2s;
+
+}
+
+
+
+.language-switcher:hover {
+
+    border-color:
+        var(--gold);
+
+}
+
+
+
+/* =========================================================
+   RECHERCHE
+   ========================================================= */
+
+.search-container {
+
+    max-width:
+        700px;
+
+    margin:
+        0 auto 25px;
+
+    padding:
+        0 20px;
+
+}
+
+
+
+.search-box {
+
+    position:
+        relative;
+
+}
+
+
+
+.search-box input {
+
+    width:
+        100%;
+
+    padding:
+        14px 45px 14px 18px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--white);
+
+    outline:
+        none;
+
+    font-size:
+        15px;
+
+    border-radius:
+        5px;
+
+}
+
+
+
+.search-box input:focus {
+
+    border-color:
+        var(--gold);
+
+}
+
+
+
+.clear-search {
+
+    position:
+        absolute;
+
+    right:
+        12px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(
+            -50%
+        );
+
+    display:
+        none;
+
+    border:
+        none;
+
+    background:
+        none;
+
+    font-size:
+        22px;
+
+    color:
+        var(--text-light);
+
+    cursor:
+        pointer;
+
+}
+
+
+
+/* =========================================================
+   CATÉGORIES PRINCIPALES
+   ========================================================= */
 
 .category-navigation {
 
-    padding-left:
-        15px;
+    display:
+        flex;
 
-    padding-right:
-        15px;
+    gap:
+        10px;
+
+    overflow-x:
+        auto;
+
+    padding:
+        0 20px 15px;
+
+    max-width:
+        1200px;
+
+    margin:
+        0 auto;
+
+    scrollbar-width:
+        none;
 
 }
 
+
+
+.category-navigation::-webkit-scrollbar {
+
+    display:
+        none;
+
+}
+
+
+
+.category-button {
+
+    flex:
+        0 0 auto;
+
+    padding:
+        10px 17px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--white);
+
+    color:
+        var(--text);
+
+    cursor:
+        pointer;
+
+    white-space:
+        nowrap;
+
+    font-size:
+        14px;
+
+    border-radius:
+        4px;
+
+    transition:
+        0.2s;
+
+}
+
+
+
+.category-button:hover {
+
+    border-color:
+        var(--gold);
+
+}
+
+
+
+.category-button.active {
+
+    background:
+        var(--text);
+
+    color:
+        var(--white);
+
+    border-color:
+        var(--text);
+
+}
+
+
+
+/* =========================================================
+   NAVIGATION SOUS-CATÉGORIES
+   ========================================================= */
 
 .subcategory-navigation {
 
-    padding-left:
-        15px;
+    position:
+        sticky;
 
-    padding-right:
-        15px;
+    top:
+        0;
+
+    z-index:
+        100;
+
+    display:
+        flex;
+
+    gap:
+        8px;
+
+    overflow-x:
+        auto;
+
+    padding:
+        10px 20px;
+
+    background:
+        rgba(
+            247,
+            245,
+            241,
+            0.96
+        );
+
+    border-top:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
+    backdrop-filter:
+        blur(10px);
+
+    scrollbar-width:
+        none;
 
 }
 
 
-/* =====================================================
-   PRODUITS — MOBILE
-   ===================================================== */
+
+.subcategory-navigation::-webkit-scrollbar {
+
+    display:
+        none;
+
+}
+
+
+
+.subcategory-button {
+
+    flex:
+        0 0 auto;
+
+    padding:
+        8px 15px;
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--text-light);
+
+    cursor:
+        pointer;
+
+    white-space:
+        nowrap;
+
+    font-size:
+        13px;
+
+    transition:
+        0.2s;
+
+}
+
+
+
+.subcategory-button:hover {
+
+    color:
+        var(--text);
+
+}
+
+
+
+.subcategory-button.active {
+
+    color:
+        var(--text);
+
+    font-weight:
+        700;
+
+}
+
+
+
+.subcategory-button.active::after {
+
+    content:
+        "";
+
+    display:
+        block;
+
+    height:
+        2px;
+
+    background:
+        var(--gold);
+
+    margin-top:
+        5px;
+
+}
+
+
+
+/* =========================================================
+   CONTENEUR PRODUITS
+   ========================================================= */
 
 .products-container {
 
-    padding-left:
-        15px;
+    max-width:
+        1200px;
 
-    padding-right:
-        15px;
+    margin:
+        0 auto;
+
+    padding:
+        25px 20px 60px;
 
 }
 
 
+
+/* =========================================================
+   TITRE CATÉGORIE PRINCIPALE
+   ========================================================= */
+
+.category-title {
+
+    font-size:
+        26px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        2px;
+
+    text-transform:
+        uppercase;
+
+    margin:
+        35px 0 25px;
+
+    padding-bottom:
+        12px;
+
+    border-bottom:
+        1px solid var(--border);
+
+    scroll-margin-top:
+        70px;
+
+}
+
+
+
+/* =========================================================
+   TITRE SOUS-CATÉGORIE
+   ========================================================= */
+
+.subcategory-title {
+
+    font-size:
+        17px;
+
+    font-weight:
+        700;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        1.5px;
+
+    margin:
+        35px 0 18px;
+
+    padding-left:
+        12px;
+
+    border-left:
+        3px solid var(--gold);
+
+}
+
+
+
+/* =========================================================
+   GRILLE PRODUITS
+   ========================================================= */
+
 .products-grid {
+
+    display:
+        grid;
 
     grid-template-columns:
         repeat(
-            2,
+            auto-fill,
             minmax(
-                0,
+                220px,
                 1fr
             )
         );
 
     gap:
-        10px;
+        20px;
 
 }
 
+
+
+/* =========================================================
+   CARTE PRODUIT
+   ========================================================= */
+
+.product-card {
+
+    background:
+        var(--white);
+
+    border:
+        1px solid var(--border);
+
+    overflow:
+        hidden;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+
+}
+
+
+
+.product-card:hover {
+
+    transform:
+        translateY(
+            -3px
+        );
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+
+}
+
+
+
+/* =========================================================
+   IMAGE PRODUIT
+   ========================================================= */
+
+.product-image-container {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    aspect-ratio:
+        1 / 1;
+
+    background:
+        #eeeeee;
+
+}
+
+
+
+.product-image {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    display:
+        block;
+
+}
+
+
+
+.product-reference {
+
+    position:
+        absolute;
+
+    top:
+        10px;
+
+    left:
+        10px;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.7
+        );
+
+    color:
+        white;
+
+    padding:
+        5px 8px;
+
+    font-size:
+        12px;
+
+}
+
+
+
+/* =========================================================
+   INFOS PRODUIT
+   ========================================================= */
 
 .product-info {
 
     padding:
+        15px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    flex:
+        1;
+
+}
+
+
+
+/* =========================================================
+   NOM PRODUIT
+   ========================================================= */
+
+.product-name {
+
+    font-size:
+        15px;
+
+    line-height:
+        1.4;
+
+    margin-bottom:
+        0;
+
+}
+
+
+
+/* =========================================================
+   DESCRIPTION PRODUIT
+   ========================================================= */
+
+.product-description {
+
+    font-size:
+        13px;
+
+    line-height:
+        1.5;
+
+    color:
+        var(--text-light);
+
+    margin-top:
+        auto;
+
+    margin-bottom:
+        auto;
+
+    padding-top:
+        15px;
+
+    padding-bottom:
+        15px;
+
+}
+
+
+
+/* =========================================================
+   PRIX
+   ========================================================= */
+
+.product-price {
+
+    font-size:
+        15px;
+
+    font-weight:
+        700;
+
+    color:
+        var(--gold);
+
+    margin-top:
+        0;
+
+}
+
+
+
+/* =========================================================
+   AUCUN RÉSULTAT
+   ========================================================= */
+
+.no-results {
+
+    text-align:
+        center;
+
+    padding:
+        80px 20px;
+
+}
+
+
+
+.no-results h2 {
+
+    margin-bottom:
         10px;
 
 }
 
 
-.product-name {
 
-    font-size:
-        13px;
+.no-results p {
 
-}
-
-
-.product-description {
-
-    font-size:
-        11px;
-
-    line-height:
-        1.4;
-
-    padding-top:
-        12px;
-
-    padding-bottom:
-        12px;
+    color:
+        var(--text-light);
 
 }
 
 
-.product-price {
 
-    font-size:
-        13px;
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+
+    text-align:
+        center;
+
+    padding:
+        40px 20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:
+        var(--text-light);
+
+}
+
+
+
+.site-footer .logo {
+
+    color:
+        var(--text);
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        4px;
+
+    margin-bottom:
+        10px;
 
 }
 
 
-.category-title {
 
-    font-size:
-        21px;
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
-}
+@media (
+    max-width: 600px
+) {
 
 
-.subcategory-title {
+    /* =====================================================
+       LOGO ÉCRAN DE LANGUE — MOBILE
+       ===================================================== */
 
-    font-size:
-        15px;
+    .language-box .logo {
 
-}
-```
+        width:
+            220px;
+
+        max-width:
+            85%;
+
+        height:
+            auto;
+
+        margin:
+            0 auto 30px;
+
+    }
+
+
+    .language-box h1 {
+
+        font-size:
+            24px;
+
+    }
+
+
+    .language-buttons {
+
+        flex-direction:
+            column;
+
+        align-items:
+            center;
+
+    }
+
+
+    .language-choice {
+
+        max-width:
+            300px;
+
+        width:
+            100%;
+
+    }
+
+
+    /* =====================================================
+       HEADER — MOBILE
+       ===================================================== */
+
+    .site-header {
+
+        padding:
+            20px 15px 20px;
+
+    }
+
+
+    .language-switcher {
+
+        top:
+            15px;
+
+        left:
+            15px;
+
+    }
+
+
+    /* LOGO PRINCIPAL — MOBILE */
+
+    .header-content .logo {
+
+        width:
+            200px;
+
+        max-width:
+            75%;
+
+        height:
+            auto;
+
+        margin:
+            -10px auto 10px;
+
+    }
+
+
+    .header-content h1 {
+
+        font-size:
+            25px;
+
+    }
+
+
+    .category-navigation {
+
+        padding-left:
+            15px;
+
+        padding-right:
+            15px;
+
+    }
+
+
+    .subcategory-navigation {
+
+        padding-left:
+            15px;
+
+        padding-right:
+            15px;
+
+    }
+
+
+    .products-container {
+
+        padding-left:
+            15px;
+
+        padding-right:
+            15px;
+
+    }
+
+
+    .products-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+        gap:
+            10px;
+
+    }
+
+
+    .product-info {
+
+        padding:
+            10px;
+
+    }
+
+
+    .product-name {
+
+        font-size:
+            13px;
+
+    }
+
+
+    .product-description {
+
+        font-size:
+            11px;
+
+        line-height:
+            1.4;
+
+        padding-top:
+            12px;
+
+        padding-bottom:
+            12px;
+
+    }
+
+
+    .product-price {
+
+        font-size:
+            13px;
+
+    }
+
+
+    .category-title {
+
+        font-size:
+            21px;
+
+    }
+
+
+    .subcategory-title {
+
+        font-size:
+            15px;
+
+    }
 
 }
