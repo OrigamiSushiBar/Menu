@@ -25,8 +25,8 @@
     --white:
         #ffffff;
 
-    --gold:
-        #b08d57;
+    --primary:
+        #ea1b24;
 
     --border:
         #e5e1da;
@@ -254,7 +254,7 @@ body {
 .language-choice:hover {
 
     border-color:
-        var(--gold);
+        var(--primary);
 
     transform:
         translateY(
@@ -391,7 +391,7 @@ body {
 .language-switcher:hover {
 
     border-color:
-        var(--gold);
+        var(--primary);
 
 }
 
@@ -455,7 +455,7 @@ body {
 .search-box input:focus {
 
     border-color:
-        var(--gold);
+        var(--primary);
 
 }
 
@@ -578,7 +578,7 @@ body {
 .category-button:hover {
 
     border-color:
-        var(--gold);
+        var(--primary);
 
 }
 
@@ -587,13 +587,13 @@ body {
 .category-button.active {
 
     background:
-        var(--text);
+        var(--primary);
 
     color:
         var(--white);
 
     border-color:
-        var(--text);
+        var(--primary);
 
 }
 
@@ -725,7 +725,7 @@ body {
         2px;
 
     background:
-        var(--gold);
+        var(--primary);
 
     margin-top:
         5px;
@@ -812,7 +812,7 @@ body {
         12px;
 
     border-left:
-        3px solid var(--gold);
+        3px solid var(--primary);
 
 }
 
@@ -1049,7 +1049,7 @@ body {
         700;
 
     color:
-        var(--gold);
+        var(--primary);
 
     margin-top:
         0;
