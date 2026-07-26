@@ -122,10 +122,92 @@ body {
         center;
 
     background:
-        var(--background);
+        linear-gradient(
+            160deg,
+            #ffffff 0%,
+            #fdf6f6 45%,
+            #ffffff 100%
+        );
 
     padding:
         20px;
+
+    overflow:
+        hidden;
+
+}
+
+
+
+/* =========================================================
+   PLIS DÉCORATIFS (EFFET ORIGAMI)
+   ========================================================= */
+
+.language-screen::before,
+.language-screen::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    pointer-events:
+        none;
+
+}
+
+
+
+.language-screen::before {
+
+    top:
+        -120px;
+
+    left:
+        -120px;
+
+    width:
+        340px;
+
+    height:
+        340px;
+
+    background:
+        var(--primary);
+
+    opacity:
+        0.08;
+
+    clip-path:
+        polygon(0 0, 100% 0, 0 100%);
+
+}
+
+
+
+.language-screen::after {
+
+    bottom:
+        -140px;
+
+    right:
+        -140px;
+
+    width:
+        380px;
+
+    height:
+        380px;
+
+    background:
+        var(--text);
+
+    opacity:
+        0.045;
+
+    clip-path:
+        polygon(100% 100%, 0 100%, 100% 0);
 
 }
 
@@ -133,14 +215,65 @@ body {
 
 .language-box {
 
+    position:
+        relative;
+
     width:
         100%;
 
     max-width:
-        450px;
+        440px;
 
     text-align:
         center;
+
+    background:
+        var(--white);
+
+    padding:
+        50px 40px 45px;
+
+    border-radius:
+        18px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.09);
+
+    z-index:
+        1;
+
+}
+
+
+
+.language-box::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        70px;
+
+    height:
+        4px;
+
+    background:
+        var(--primary);
+
+    border-radius:
+        0 0 4px 4px;
 
 }
 
@@ -156,7 +289,7 @@ body {
         block;
 
     width:
-        280px;
+        260px;
 
     max-width:
         90%;
@@ -168,7 +301,38 @@ body {
         contain;
 
     margin:
-        0 auto 35px;
+        5px auto 20px;
+
+    filter:
+        drop-shadow(0 6px 14px rgba(234, 27, 36, 0.12));
+
+}
+
+
+
+/* =========================================================
+   ACCROCHE — ÉCRAN DE LANGUE
+   ========================================================= */
+
+.language-tagline {
+
+    color:
+        var(--primary);
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        3px;
+
+    text-transform:
+        uppercase;
+
+    margin-bottom:
+        18px;
 
 }
 
@@ -181,22 +345,31 @@ body {
 .language-box h1 {
 
     font-size:
-        28px;
+        30px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.5px;
 
     margin-bottom:
-        10px;
+        8px;
 
 }
 
 
 
-.language-box p {
+.language-subtitle {
 
     color:
         var(--text-light);
 
+    font-size:
+        14px;
+
     margin-bottom:
-        30px;
+        32px;
 
 }
 
@@ -212,7 +385,7 @@ body {
         flex;
 
     gap:
-        15px;
+        16px;
 
     justify-content:
         center;
@@ -229,11 +402,26 @@ body {
     max-width:
         180px;
 
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
     padding:
-        18px;
+        22px 18px;
 
     border:
-        1px solid var(--border);
+        2px solid var(--border);
+
+    border-radius:
+        14px;
 
     background:
         var(--white);
@@ -242,36 +430,64 @@ body {
         pointer;
 
     font-size:
-        17px;
+        16px;
+
+    font-weight:
+        600;
+
+    color:
+        var(--text);
 
     transition:
-        0.25s;
+        0.25s ease;
 
 }
 
 
 
-.language-choice:hover {
+.language-choice .flag {
+
+    font-size:
+        34px;
+
+    line-height:
+        1;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+
+.language-choice:hover,
+.language-choice:focus-visible {
 
     border-color:
         var(--primary);
 
-    transform:
-        translateY(
-            -2px
+    background:
+        linear-gradient(
+            160deg,
+            rgba(234, 27, 36, 0.06),
+            rgba(234, 27, 36, 0.01)
         );
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 24px rgba(234, 27, 36, 0.14);
 
 }
 
 
 
-.language-choice span {
+.language-choice:hover .flag,
+.language-choice:focus-visible .flag {
 
-    display:
-        block;
-
-    margin-top:
-        8px;
+    transform:
+        scale(1.12);
 
 }
 
@@ -1003,6 +1219,12 @@ body {
 
     margin-bottom:
         0;
+
+    color:
+        var(--primary);
+
+    font-weight:
+        700;
 
 }
 
