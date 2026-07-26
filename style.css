@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    ORIGAMI SUSHI BAR — MENU QR
    STYLE.CSS
@@ -965,7 +966,7 @@ body {
     line-height:
         1.4;
 
-    margin-bottom:
+    margin:
         0;
 
 }
@@ -988,27 +989,21 @@ body {
         var(--text-light);
 
     /*
-       La description est centrée verticalement
+       La description occupe la zone flexible
        entre le titre et le prix.
+       Elle reste centrée verticalement.
     */
 
-    margin-top:
-        auto;
-
-    margin-bottom:
-        auto;
+    margin:
+        auto 0;
 
     /*
-       Espace minimum identique entre :
-       titre → description
-       description → prix
+       Même espace minimum au-dessus
+       et en-dessous de la description.
     */
 
-    padding-top:
-        15px;
-
-    padding-bottom:
-        15px;
+    padding:
+        15px 0;
 
 }
 
@@ -1029,7 +1024,7 @@ body {
     color:
         var(--gold);
 
-    margin-top:
+    margin:
         0;
 
 }
@@ -1259,16 +1254,16 @@ body {
             1.4;
 
         /*
-           On garde exactement le même principe
-           sur mobile : espace minimum identique
-           au-dessus et en-dessous.
+           Même comportement sur mobile :
+           la description reste centrée verticalement
+           entre le titre et le prix.
         */
 
-        padding-top:
-            12px;
+        padding:
+            12px 0;
 
-        padding-bottom:
-            12px;
+        margin:
+            auto 0;
 
     }
 
@@ -1297,3 +1292,4 @@ body {
     }
 
 }
+```
