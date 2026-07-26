@@ -156,13 +156,10 @@ body {
         block;
 
     width:
-        auto;
+        280px;
 
     max-width:
-        350px;
-
-    max-height:
-        160px;
+        90%;
 
     height:
         auto;
@@ -171,11 +168,15 @@ body {
         contain;
 
     margin:
-        0 auto 25px;
+        0 auto 35px;
 
 }
 
 
+
+/* =========================================================
+   TITRE ÉCRAN DE LANGUE
+   ========================================================= */
 
 .language-box h1 {
 
@@ -200,6 +201,10 @@ body {
 }
 
 
+
+/* =========================================================
+   BOUTONS DE LANGUE
+   ========================================================= */
 
 .language-buttons {
 
@@ -294,19 +299,20 @@ body {
 
 
 
+/* =========================================================
+   LOGO — HEADER PRINCIPAL
+   ========================================================= */
+
 .header-content .logo {
 
     display:
         block;
 
     width:
-        auto;
+        240px;
 
     max-width:
-        300px;
-
-    max-height:
-        130px;
+        80%;
 
     height:
         auto;
@@ -315,7 +321,7 @@ body {
         contain;
 
     margin:
-        -5px auto 10px;
+        -15px auto 15px;
 
 }
 
@@ -1141,14 +1147,17 @@ body {
 
     .language-box .logo {
 
-        max-width:
-            320px;
+        width:
+            220px;
 
-        max-height:
-            150px;
+        max-width:
+            85%;
+
+        height:
+            auto;
 
         margin:
-            0 auto 20px;
+            0 auto 30px;
 
     }
 
@@ -1210,14 +1219,17 @@ body {
 
     .header-content .logo {
 
-        max-width:
-            280px;
+        width:
+            200px;
 
-        max-height:
-            120px;
+        max-width:
+            75%;
+
+        height:
+            auto;
 
         margin:
-            -10px auto 5px;
+            -10px auto 10px;
 
     }
 
