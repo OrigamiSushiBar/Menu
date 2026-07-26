@@ -135,7 +135,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "california-rolls",
+            id: "california",
             fr: "California Rolls",
             en: "California Rolls",
             titleFR: "California Rolls (4 pièces)",
@@ -151,7 +151,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "rouleaux-du-chef",
+            id: "rouleaux",
             fr: "Rouleaux Du Chef",
             en: "Chef's Special Rolls",
             titleFR: "Rouleaux Du Chef (9 pièces)",
@@ -159,7 +159,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "green-maki",
+            id: "green",
             fr: "Green Maki",
             en: "Green Maki",
             titleFR: "Green Maki (8 pièces)",
@@ -167,7 +167,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "sushi-cake",
+            id: "cake",
             fr: "Sushi Cake",
             en: "Sushi Cake",
             titleFR: "Sushi Cake (4 pièces)",
@@ -175,7 +175,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "sushi-panko",
+            id: "panko",
             fr: "Sushi Panko",
             en: "Sushi Panko",
             titleFR: "Sushi Panko (4 pièces)",
@@ -183,7 +183,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "crunchy-rolls",
+            id: "crolls",
             fr: "Crunchy Rolls",
             en: "Crunchy Rolls",
             titleFR: "Crunchy Rolls (6 pièces)",
@@ -191,7 +191,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "crunchy-mix",
+            id: "cmix",
             fr: "Crunchy Mix",
             en: "Crunchy Mix",
             titleFR: "Crunchy Mix (12 pièces)",
@@ -199,7 +199,7 @@ const subcategoriesOrder = {
         },
 
         {
-            id: "riz-garni",
+            id: "garni",
             fr: "Bols de Riz Garnis",
             en: "Rice Bowls"
         },
@@ -273,7 +273,7 @@ const subcategoriesOrder = {
     "accompagnements": [
 
         {
-            id: "riz-salade",
+            id: "acc",
             fr: "Riz/Salade",
             en: "Rice/Salad"
         },
@@ -1138,7 +1138,56 @@ const products = [
         category: "sushi",
         subcategory: "hosomaki",
     },
+   
+    {
+        reference: "50",
+        nameFR: "California Classic",
+        nameEN: "Classic California Roll",
+        descriptionFR: "Avocat, Surimi, Concombre, Mayo, Sésame",
+        descriptionEN: "Avocado, Crab Surimi, Cucumber, Mayonnaise & Sesame",
+        price: "10,000 DT",
+        image: "images/10.jpg",
+        category: "sushi",
+        subcategory: "california",
+    },
 
+    {
+        reference: "51",
+        nameFR: "California Végétarien",
+        nameEN: "Vegetarian California Roll",
+        descriptionFR: "Avocat, Carottes, Concombre, Épinards",
+        descriptionEN: "Avocado, Carrots, Cucumber & Spinach",
+        price: "9,000 DT",
+        image: "images/51.jpg",
+        category: "sushi",
+        subcategory: "california",
+    },
+
+    {
+        reference: "52",
+        nameFR: "Shogun",
+        nameEN: "Shogun",
+        descriptionFR: "Daurade Tataki, Avocats, Champignons, Laitue, Sauce au Miel, Garniture Oignons Crispy",
+        descriptionEN: "Sea Bream Tataki, Avocado, Mushrooms, Lettuce, Honey Sauce & Crispy Onions",
+        price: "11,000 DT",
+        image: "images/52.jpg",
+        category: "sushi",
+        subcategory: "california",
+    },
+
+    {
+        reference: "53",
+        nameFR: "Spicy Maguro",
+        nameEN: "Spicy Maguro",
+        descriptionFR: "Thon Épicé, Coriandre. Garniture Ciboulette (selon arrivage)",
+        descriptionEN: "Spicy Tuna, Cilantro & Chives (subject to availability)",
+        price: "11,000 DT",
+        image: "images/53.jpg",
+        category: "sushi",
+        subcategory: "california",
+    },
+
+    
     {
         reference: "193",
         nameFR: "Kushikatsu Bœuf Fromage",
