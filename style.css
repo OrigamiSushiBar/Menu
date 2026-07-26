@@ -966,7 +966,7 @@ body {
         1.4;
 
     margin-bottom:
-        15px;
+        0;
 
 }
 
@@ -987,10 +987,27 @@ body {
     color:
         var(--text-light);
 
+    /*
+       La description est centrée verticalement
+       entre le titre et le prix.
+    */
+
     margin-top:
-        0;
+        auto;
 
     margin-bottom:
+        auto;
+
+    /*
+       Espace minimum identique entre :
+       titre → description
+       description → prix
+    */
+
+    padding-top:
+        15px;
+
+    padding-bottom:
         15px;
 
 }
@@ -1013,7 +1030,7 @@ body {
         var(--gold);
 
     margin-top:
-        auto;
+        0;
 
 }
 
@@ -1230,9 +1247,6 @@ body {
         font-size:
             13px;
 
-        margin-bottom:
-            15px;
-
     }
 
 
@@ -1244,11 +1258,17 @@ body {
         line-height:
             1.4;
 
-        margin-top:
-            0;
+        /*
+           On garde exactement le même principe
+           sur mobile : espace minimum identique
+           au-dessus et en-dessous.
+        */
 
-        margin-bottom:
-            15px;
+        padding-top:
+            12px;
+
+        padding-bottom:
+            12px;
 
     }
 
