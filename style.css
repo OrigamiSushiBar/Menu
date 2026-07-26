@@ -335,6 +335,9 @@ body {
     margin-bottom:
         8px;
 
+    color:
+        var(--primary);
+
 }
 
 
@@ -725,7 +728,7 @@ body {
         2px;
 
     background:
-        var(--primary);
+        var(--cat-accent, var(--primary));
 
     margin-top:
         5px;
