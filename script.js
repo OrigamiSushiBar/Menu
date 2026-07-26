@@ -1362,6 +1362,61 @@ let currentSearch = "";
 
 
 /* =========================================================
+   COULEURS PAR CATÉGORIE
+   ========================================================= */
+
+const categoryColors = {
+
+    all: "#ea1b24",
+
+    entrees: "#a1c89d",
+
+    sushi: "#df646c",
+
+    "plats-chauds": "#e39f77",
+
+    accompagnements: "#e1c57f",
+
+    desserts: "#e29cc1",
+
+    boissons: "#8badd8"
+
+};
+
+
+
+/* =========================================================
+   COULEUR DE TEXTE LISIBLE SELON LE FOND
+   ========================================================= */
+
+function getContrastTextColor(
+    hexColor
+) {
+
+    const hex =
+        hexColor.replace("#", "");
+
+    const r =
+        parseInt(hex.substring(0, 2), 16);
+
+    const g =
+        parseInt(hex.substring(2, 4), 16);
+
+    const b =
+        parseInt(hex.substring(4, 6), 16);
+
+    const brightness =
+        (r * 299 + g * 587 + b * 114) / 1000;
+
+    return brightness > 150
+        ? "#1a1a1a"
+        : "#ffffff";
+
+}
+
+
+
+/* =========================================================
    ÉLÉMENTS HTML
    ========================================================= */
 
@@ -1846,6 +1901,24 @@ function createCategoryButton(
             "active"
         );
 
+
+        const activeColor =
+
+            categoryColors[category] ||
+            categoryColors.all;
+
+
+        button.style.backgroundColor =
+            activeColor;
+
+        button.style.borderColor =
+            activeColor;
+
+        button.style.color =
+            getContrastTextColor(
+                activeColor
+            );
+
     }
 
 
@@ -1938,6 +2011,18 @@ function renderSubcategories() {
 
     subcategoryNavigation.classList.remove(
         "hidden"
+    );
+
+
+    const accentColor =
+
+        categoryColors[currentCategory] ||
+        categoryColors.all;
+
+
+    subcategoryNavigation.style.setProperty(
+        "--cat-accent",
+        accentColor
     );
 
 
@@ -2465,6 +2550,19 @@ function renderCategory(
             subcategoryTitle.id =
 
                 `subcategory-${categoryId}-${subcategory.id}`;
+
+
+            const subcategoryColor =
+
+                categoryColors[categoryId] ||
+                categoryColors.all;
+
+
+            subcategoryTitle.style.color =
+                subcategoryColor;
+
+            subcategoryTitle.style.borderLeftColor =
+                subcategoryColor;
 
 
             subcategoryTitle.textContent =
