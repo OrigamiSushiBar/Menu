@@ -1532,8 +1532,14 @@ body {
     background-attachment:
         scroll;
 
+    background-repeat:
+        no-repeat;
+
     background-size:
-        900px auto;
+        cover;
+
+    background-position:
+        center;
 
 }
 
