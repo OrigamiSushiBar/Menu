@@ -2547,13 +2547,6 @@ function createProductCard(
 
             >
 
-
-            <span class="product-reference">
-
-                [${product.reference}]
-
-            </span>
-
         </div>
 
 
@@ -2561,7 +2554,7 @@ function createProductCard(
 
             <h3 class="product-name">
 
-                ${productName}
+                <span class="product-reference">[${product.reference}]</span> ${productName}
 
             </h3>
 
