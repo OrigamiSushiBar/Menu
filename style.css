@@ -1392,7 +1392,7 @@ text-align:
     center;
 
 padding:
-    10px 20px 40px;
+    20px 20px 40px;
 
 border-top:
     1px solid var(--border);
@@ -1518,7 +1518,7 @@ max-width: 600px
 .site-footer {
 
     padding-top:
-        4px;
+        10px;
 
 }
 
