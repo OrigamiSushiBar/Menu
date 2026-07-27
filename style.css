@@ -1002,7 +1002,7 @@ font-size:
 font-weight:
     700;
 
-color: var(--primary);
+color: var(--text);
 
 letter-spacing:
     2px;
@@ -1461,7 +1461,7 @@ max-width: 600px
         28px;
 
     color:
-        var(--primary);
+        var(--text);
 
 }
 
