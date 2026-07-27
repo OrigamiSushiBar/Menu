@@ -343,7 +343,7 @@ color:
     var(--text);
 
 margin-bottom:
-    10px;
+    30px;
 
 }
 
@@ -375,7 +375,6 @@ gap:
 justify-content:
     center;
 
-margin-top: 30px;
 
 }
 
@@ -529,23 +528,23 @@ LOGO — HEADER PRINCIPAL
 
 .header-content .logo {
 
-display:
-    block;
+position:
+    absolute;
+
+top:
+    15px;
+
+right:
+    20px;
 
 width:
-    240px;
-
-max-width:
-    80%;
+    120px;
 
 height:
     auto;
 
 object-fit:
     contain;
-
-margin:
-    -15px auto 15px;
 
 }
 
@@ -558,7 +557,7 @@ margin-bottom:
     8px;
 
 color:
-    var(--primary);
+    var(--text);
 
 }
 
@@ -1519,17 +1518,26 @@ max-width: 600px
 
 .header-content .logo {
 
+    position:
+        absolute;
+
+    top:
+        15px;
+
+    right:
+        15px;
+
     width:
-        200px;
+        90px;
 
     max-width:
-        75%;
+        none;
 
     height:
         auto;
 
     margin:
-        -10px auto 10px;
+        0;
 
 }
 
