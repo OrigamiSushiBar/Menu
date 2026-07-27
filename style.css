@@ -1527,6 +1527,17 @@ MOBILE
 max-width: 600px
 ) {
 
+body {
+
+    background-attachment:
+        scroll;
+
+    background-size:
+        900px auto;
+
+}
+
+
 .language-box .logo {
 
     width:
