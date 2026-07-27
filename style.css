@@ -1002,6 +1002,8 @@ font-size:
 font-weight:
     700;
 
+color: var(--primary);
+
 letter-spacing:
     2px;
 
@@ -1009,7 +1011,7 @@ text-transform:
     uppercase;
 
 margin:
-    40px 0 25px;
+    20px 0 25px;
 
 padding-bottom:
     14px;
@@ -1265,7 +1267,7 @@ margin-bottom:
     0;
 
 color:
-    var(--primary);
+    var(--text);
 
 font-weight:
     700;
