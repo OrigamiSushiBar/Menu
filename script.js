@@ -1414,10 +1414,6 @@ const menuTitle =
         "menuTitle"
     );
 
-const menuSubtitle =
-    document.getElementById(
-        "menuSubtitle"
-    );
 
 const currentYear =
     document.getElementById(
@@ -1620,14 +1616,6 @@ function updateInterfaceTexts() {
             ? "Notre Menu"
 
             : "Our Menu";
-
-    menuSubtitle.textContent =
-
-        currentLanguage === "fr"
-
-            ? "Découvrez notre sélection"
-
-            : "Discover our selection";
 
     searchInput.placeholder =
 
