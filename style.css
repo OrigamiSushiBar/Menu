@@ -90,20 +90,8 @@ body {
 font-family:
     var(--font-main);
 
-background-image:
-    url('fond.jpg');
-
 background-color:
     var(--background);
-
-background-repeat:
-    repeat;
-
-background-size:
-    auto;
-
-background-attachment:
-    fixed;
 
 color:
     var(--text);
@@ -1526,23 +1514,6 @@ MOBILE
 @media (
 max-width: 600px
 ) {
-
-body {
-
-    background-attachment:
-        fixed;
-
-    background-repeat:
-        no-repeat;
-
-    background-size:
-        cover;
-
-    background-position:
-        center;
-
-}
-
 
 .language-box .logo {
 
