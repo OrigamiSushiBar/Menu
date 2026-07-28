@@ -584,7 +584,10 @@ top:
     88px;
 
 left:
-    26px;
+    50%;
+
+transform:
+    translateX(-50%);
 
 font-size:
     30px;
@@ -596,7 +599,7 @@ color:
     var(--text);
 
 text-align:
-    left;
+    center;
 
 }
 
@@ -1607,7 +1610,7 @@ max-width: 600px
         67px;
 
     left:
-        20px;
+        50%;
 
     font-size:
         25px;
