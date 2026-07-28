@@ -1705,6 +1705,30 @@ const products = [
         subcategory: "rouleaux",
     },
 
+    {
+        reference: "220",
+        nameFR: "Ebi Tempura",
+        nameEN: "Ebi Tempura",
+        descriptionFR: "Crevette Tempura, Avocat, Sauce Tonkatsu",
+        descriptionEN: "Tempura Shrimp, Avocado & Tonkatsu Sauce",
+        price: "25,000 DT",
+        image: "images/220.jpg",
+        category: "sushi",
+        subcategory: "green",
+    },
+
+    {
+        reference: "221",
+        nameFR: "Saigon",
+        nameEN: "Saigon",
+        descriptionFR: "Crevette Pochée, Menthe, Carotte, Concombre, Sweet Chili",
+        descriptionEN: "Poached Shrimp, Mint, Carrot, Cucumber & Sweet Chili Sauce",
+        price: "25,000 DT",
+        image: "images/221.jpg",
+        category: "sushi",
+        subcategory: "green",
+    },
+
 ];
 
 
