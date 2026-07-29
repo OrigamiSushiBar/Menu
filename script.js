@@ -1712,7 +1712,7 @@ const products = [
         descriptionFR: "Crevette Tempura, Avocat, Sauce Tonkatsu",
         descriptionEN: "Tempura Shrimp, Avocado & Tonkatsu Sauce",
         price: "25,000 DT",
-        image: "images/220.jpg",
+        image: "images/270.jpg",
         category: "sushi",
         subcategory: "green",
     },
