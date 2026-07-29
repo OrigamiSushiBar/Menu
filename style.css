@@ -885,9 +885,6 @@ box-shadow:
 border-color:
     transparent;
 
-box-shadow:
-    var(--shadow-hover);
-
 }
 
 /* =========================================================
