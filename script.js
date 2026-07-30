@@ -1,13 +1,3 @@
-/* =========================================================
-   ORIGAMI SUSHI BAR — MENU QR
-   SCRIPT.JS
-   ========================================================= */
-
-
-/* =========================================================
-   🟢 1. CATÉGORIES PRINCIPALES
-   ========================================================= */
-
 const categoriesOrder = [
 
     {
@@ -48,10 +38,6 @@ const categoriesOrder = [
 
 ];
 
-
-/* =========================================================
-   🟢 2. SOUS-CATÉGORIES
-   ========================================================= */
 
 const subcategoriesOrder = {
 
@@ -316,10 +302,6 @@ const subcategoriesOrder = {
 
 };
 
-
-/* =========================================================
-   🟢 3. PRODUITS
-   ========================================================= */
 
 const products = [
 
@@ -1151,7 +1133,7 @@ const products = [
         subcategory: "california",
     },
 
-   
+
     {
         reference: "51",
         nameFR: "California Végétarien",
@@ -3376,10 +3358,6 @@ const products = [
 ];
 
 
-/* =========================================================
-   TRADUCTIONS
-   ========================================================= */
-
 const translations = {
 
     fr: {
@@ -3417,20 +3395,12 @@ const translations = {
 };
 
 
-/* =========================================================
-   VARIABLES
-   ========================================================= */
-
 let currentLanguage = "fr";
 
 let currentCategory = "all";
 
 let currentSearch = "";
 
-
-/* =========================================================
-   COULEURS PAR CATÉGORIE
-   ========================================================= */
 
 const categoryColors = {
 
@@ -3450,10 +3420,6 @@ const categoryColors = {
 
 };
 
-
-/* =========================================================
-   COULEUR DE TEXTE LISIBLE SELON LE FOND
-   ========================================================= */
 
 function getContrastTextColor(hexColor) {
 
@@ -3478,10 +3444,6 @@ function getContrastTextColor(hexColor) {
 
 }
 
-
-/* =========================================================
-   ÉLÉMENTS HTML
-   ========================================================= */
 
 const languageScreen =
     document.getElementById(
@@ -3551,10 +3513,6 @@ const scrollToTopBtn =
     );
 
 
-/* =========================================================
-   INITIALISATION
-   ========================================================= */
-
 document.addEventListener(
     "DOMContentLoaded",
     () => {
@@ -3588,10 +3546,6 @@ document.addEventListener(
     }
 );
 
-
-/* =========================================================
-   ÉVÉNEMENTS
-   ========================================================= */
 
 function setupEventListeners() {
 
@@ -3697,10 +3651,6 @@ function setupEventListeners() {
 }
 
 
-/* =========================================================
-   BOUTON RETOUR EN HAUT
-   ========================================================= */
-
 function updateScrollToTopButton() {
 
     const scrollThreshold =
@@ -3735,10 +3685,6 @@ function updateScrollToTopButton() {
 }
 
 
-/* =========================================================
-   CHANGER LA LANGUE
-   ========================================================= */
-
 function setLanguage(language) {
 
     currentLanguage =
@@ -3768,10 +3714,6 @@ function setLanguage(language) {
 }
 
 
-/* =========================================================
-   AFFICHER LE MENU
-   ========================================================= */
-
 function showMenu() {
 
     document.documentElement.classList.remove(
@@ -3792,10 +3734,6 @@ function showMenu() {
 
 }
 
-
-/* =========================================================
-   TEXTES INTERFACE
-   ========================================================= */
 
 function updateInterfaceTexts() {
 
@@ -3838,10 +3776,6 @@ function updateInterfaceTexts() {
 }
 
 
-/* =========================================================
-   TROUVER UNE CATÉGORIE
-   ========================================================= */
-
 function getCategory(categoryId) {
 
     return categoriesOrder.find(
@@ -3853,10 +3787,6 @@ function getCategory(categoryId) {
 
 }
 
-
-/* =========================================================
-   AFFICHER CATÉGORIES PRINCIPALES
-   ========================================================= */
 
 function renderCategories() {
 
@@ -3921,10 +3851,6 @@ function renderCategories() {
 
 }
 
-
-/* =========================================================
-   CRÉER BOUTON CATÉGORIE
-   ========================================================= */
 
 function createCategoryButton(
     category,
@@ -4000,10 +3926,6 @@ function createCategoryButton(
 }
 
 
-/* =========================================================
-   AFFICHER LES SOUS-CATÉGORIES
-   ========================================================= */
-
 function renderSubcategories() {
 
     subcategoryNavigation.innerHTML =
@@ -4060,9 +3982,7 @@ function renderSubcategories() {
     );
 
 
-    /* =====================================================
-       BOUTON "TOUT"
-       ===================================================== */
+    
 
     const allButton =
         document.createElement(
@@ -4083,10 +4003,6 @@ function renderSubcategories() {
         "click",
         () => {
 
-            /*
-               On force "Tout" à devenir
-               le seul bouton actif.
-            */
 
             setActiveSubcategory(
                 allButton
@@ -4119,9 +4035,7 @@ function renderSubcategories() {
     );
 
 
-    /* =====================================================
-       AUTRES SOUS-CATÉGORIES
-       ===================================================== */
+    
 
     subcategories.forEach(
         subcategory => {
@@ -4213,10 +4127,6 @@ function renderSubcategories() {
 }
 
 
-/* =========================================================
-   SCROLL VERS UNE SOUS-CATÉGORIE
-   ========================================================= */
-
 function scrollToElement(element) {
 
     const subcategoryBar =
@@ -4266,10 +4176,6 @@ function scrollToElement(element) {
 }
 
 
-/* =========================================================
-   ACTIVER UNE SOUS-CATÉGORIE
-   ========================================================= */
-
 function setActiveSubcategory(
     activeButton
 ) {
@@ -4288,10 +4194,6 @@ function setActiveSubcategory(
                 "active"
             );
 
-            /*
-               On retire également les styles
-               inline éventuellement ajoutés.
-            */
 
             button.style.backgroundColor =
                 "";
@@ -4312,10 +4214,6 @@ function setActiveSubcategory(
 
 }
 
-
-/* =========================================================
-   FILTRER LES PRODUITS
-   ========================================================= */
 
 function getFilteredProducts() {
 
@@ -4397,10 +4295,6 @@ function getFilteredProducts() {
 }
 
 
-/* =========================================================
-   AFFICHER LES PRODUITS
-   ========================================================= */
-
 function renderProducts() {
 
     productsContainer.innerHTML =
@@ -4462,10 +4356,6 @@ function renderProducts() {
 
 }
 
-
-/* =========================================================
-   AFFICHER UNE CATÉGORIE
-   ========================================================= */
 
 function renderCategory(
     categoryId,
@@ -4629,10 +4519,6 @@ function renderCategory(
 }
 
 
-/* =========================================================
-   CRÉER GRILLE PRODUITS
-   ========================================================= */
-
 function createProductGrid(
     productList
 ) {
@@ -4669,10 +4555,6 @@ function createProductGrid(
 
 }
 
-
-/* =========================================================
-   CRÉER CARTE PRODUIT
-   ========================================================= */
 
 function createProductCard(
     product
@@ -4776,10 +4658,6 @@ function createProductCard(
 
 }
 
-
-/* =========================================================
-   BOUTON EFFACER RECHERCHE
-   ========================================================= */
 
 function updateClearButton() {
 
