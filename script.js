@@ -3218,6 +3218,18 @@ const products = [
     },
 
     {
+        reference: "177",
+        nameFR: "Thé Séncha",
+        nameEN: "Sencha Tea",
+        descriptionFR: "Thé Vert Japonais Traditionnel",
+        descriptionEN: "Traditionnal Japanese Green Tea",
+        price: "6,000 DT",
+        image: "images/177.jpg",
+        category: "boissons",
+        subcategory: "boisson",
+    },
+
+    {
         reference: "178",
         nameFR: "Thé Hojicha",
         nameEN: "Hojicha Tea",
