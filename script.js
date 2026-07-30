@@ -3125,8 +3125,8 @@ const products = [
         reference: "144",
         nameFR: "Trilogie de Glaces Maison",
         nameEN: "Homemade Ice Cream Trio",
-        descriptionFR: "Trio Sésame, Gingembre & Haricots Rouges",
-        descriptionEN: "Sesame, Ginger & Red Bean Trio",
+        descriptionFR: "Trio Sésame, Gingembre & Thé Vert Matcha",
+        descriptionEN: "Sesame, Ginger & Green Tea Matcha Trio",
         price: "22,000 DT",
         image: "images/144.jpg",
         category: "desserts",
@@ -3179,6 +3179,18 @@ const products = [
         image: "no.png",
         category: "desserts",
         subcategory: "fondants",
+    },
+
+    {
+        reference: "172",
+        nameFR: "Bouteille d'Eau (1 L)",
+        nameEN: "Water Bottle (1 L)",
+        descriptionFR: "Eau Minérale",
+        descriptionEN: "Mineral Water",
+        price: "3,000 DT",
+        image: "boissons/eau.jpg",
+        category: "boissons",
+        subcategory: "boisson",
     },
 
     {
@@ -3279,18 +3291,6 @@ const products = [
 
     {
         reference: "",
-        nameFR: "Boga Cidre",
-        nameEN: "Boga Cidre",
-        descriptionFR: "",
-        descriptionEN: "",
-        price: "2,500 DT",
-        image: "boissons/bogac.jpg",
-        category: "boissons",
-        subcategory: "boisson",
-    },
-
-    {
-        reference: "",
         nameFR: "Boga Lim",
         nameEN: "Boga Lim",
         descriptionFR: "",
@@ -3303,12 +3303,12 @@ const products = [
 
     {
         reference: "",
-        nameFR: "Apla",
-        nameEN: "Apla",
+        nameFR: "Boga Cidre",
+        nameEN: "Boga Cidre",
         descriptionFR: "",
         descriptionEN: "",
         price: "2,500 DT",
-        image: "boissons/apla.jpg",
+        image: "boissons/bogac.jpg",
         category: "boissons",
         subcategory: "boisson",
     },
@@ -3333,6 +3333,42 @@ const products = [
         descriptionEN: "",
         price: "2,500 DT",
         image: "boissons/fanta.jpg",
+        category: "boissons",
+        subcategory: "boisson",
+    },
+
+    {
+        reference: "",
+        nameFR: "Schweppes Tonic",
+        nameEN: "Schweppes Tonic",
+        descriptionFR: "",
+        descriptionEN: "",
+        price: "2,500 DT",
+        image: "boissons/schweppest.jpg",
+        category: "boissons",
+        subcategory: "boisson",
+    },
+
+    {
+        reference: "",
+        nameFR: "Schweppes Ananas",
+        nameEN: "Schweppes Ananas",
+        descriptionFR: "",
+        descriptionEN: "",
+        price: "2,500 DT",
+        image: "boissons/schweppesa.jpg",
+        category: "boissons",
+        subcategory: "boisson",
+    },
+
+    {
+        reference: "",
+        nameFR: "Boisson Énergisante",
+        nameEN: "Energy Drink",
+        descriptionFR: "",
+        descriptionEN: "",
+        price: "10,000 DT",
+        image: "boissons/redbull.jpg",
         category: "boissons",
         subcategory: "boisson",
     },
