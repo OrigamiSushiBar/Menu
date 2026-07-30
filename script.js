@@ -4590,7 +4590,7 @@ function createProductCard(
                 </p>
             `
 
-            : "";
+            : `<div class="product-spacer"></div>`;
 
 
     const referenceHTML =
