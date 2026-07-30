@@ -2289,7 +2289,7 @@ const products = [
         descriptionEN: "Grilled Chicken & Cheese Skewers",
         price: "16,000 DT",
         image: "images/90a.jpg",
-        category: "sushi",
+        category: "plats-chauds",
         subcategory: "yakitori",
     },
 
