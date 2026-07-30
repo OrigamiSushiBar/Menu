@@ -4493,6 +4493,10 @@ function renderCategory(
                 );
 
 
+            grid.id =
+                `products-grid-${categoryId}-${subcategory.id}`;
+
+
             productsContainer.appendChild(
                 grid
             );
@@ -4593,6 +4597,15 @@ function createProductCard(
             : "";
 
 
+    const referenceHTML =
+
+        product.reference
+
+            ? `<span class="product-reference">[${product.reference}]</span> `
+
+            : "";
+
+
     card.innerHTML = `
 
         <div class="product-image-container">
@@ -4618,7 +4631,7 @@ function createProductCard(
 
             <h3 class="product-name">
 
-                <span class="product-reference">[${product.reference}]</span> ${productName}
+                ${referenceHTML}${productName}
 
             </h3>
 
