@@ -1161,37 +1161,6 @@ gap:
 }
 
 /* =========================================================
-GRILLE FONDANTS/SAUCES (desserts)
-Force 2 colonnes fixes quelle que soit la largeur d'écran,
-pour que "Sauce au Chocolat" et "Coulis de Fruits Rouges"
-(ainsi que les deux fondants) restent alignés en paires
-sur la même ligne — image, titre et description au même
-niveau — et centre la grille dans la page.
-========================================================= */
-
-#products-grid-desserts-fondants {
-
-grid-template-columns:
-    repeat(
-        2,
-        minmax(
-            0,
-            1fr
-        )
-    );
-
-max-width:
-    520px;
-
-margin-left:
-    auto;
-
-margin-right:
-    auto;
-
-}
-
-/* =========================================================
 CARTE PRODUIT
 ========================================================= */
 
@@ -1397,7 +1366,7 @@ border-radius:
     20px;
 
 margin-top:
-    0;
+    auto;
 
 }
 
