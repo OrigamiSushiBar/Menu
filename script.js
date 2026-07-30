@@ -3195,8 +3195,8 @@ const products = [
 
     {
         reference: "172",
-        nameFR: "Bouteille d'Eau (0.5 L)",
-        nameEN: "Water Bottle (0.5 L)",
+        nameFR: "Bouteille d'Eau<br>(0.5 L)",
+        nameEN: "Water Bottle<br>(0.5 L)",
         descriptionFR: "Eau Minérale",
         descriptionEN: "Mineral Water",
         price: "2,000 DT",
