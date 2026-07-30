@@ -3211,7 +3211,7 @@ const products = [
         nameEN: "Non-Alcoholic Beer",
         descriptionFR: "Bière 0% d'Alcool",
         descriptionEN: "0% Alcohol Beer",
-        price: "4,000 DT",
+        price: "5,000 DT",
         image: "images/175.jpg",
         category: "boissons",
         subcategory: "boisson",
