@@ -1370,6 +1370,15 @@ margin-top:
 
 }
 
+/* Espace minimum titre/prix quand il n'y a pas de description
+   (le prix suit directement le nom du produit) */
+.product-name + .product-price {
+
+margin-top:
+    50px;
+
+}
+
 /* =========================================================
 AUCUN RÉSULTAT
 ========================================================= */
@@ -1709,6 +1718,14 @@ max-width: 600px
 
     font-size:
         13px;
+
+}
+
+
+.product-name + .product-price {
+
+    margin-top:
+        38px;
 
 }
 
