@@ -3545,6 +3545,12 @@ const currentYear =
     );
 
 
+const scrollToTopBtn =
+    document.getElementById(
+        "scrollToTopBtn"
+    );
+
+
 /* =========================================================
    INITIALISATION
    ========================================================= */
@@ -3665,6 +3671,66 @@ function setupEventListeners() {
 
         }
     );
+
+
+    window.addEventListener(
+        "scroll",
+        updateScrollToTopButton
+    );
+
+
+    scrollToTopBtn.addEventListener(
+        "click",
+        () => {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   BOUTON RETOUR EN HAUT
+   ========================================================= */
+
+function updateScrollToTopButton() {
+
+    const scrollThreshold =
+        400;
+
+    if (
+        window.scrollY > scrollThreshold
+    ) {
+
+        scrollToTopBtn.classList.remove(
+            "is-hidden"
+        );
+
+    } else {
+
+        scrollToTopBtn.classList.add(
+            "is-hidden"
+        );
+
+    }
+
+
+    const activeColor =
+
+        categoryColors[currentCategory] ||
+        categoryColors.all;
+
+
+    scrollToTopBtn.style.backgroundColor =
+        activeColor;
 
 }
 
