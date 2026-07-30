@@ -4493,10 +4493,6 @@ function renderCategory(
                 );
 
 
-            grid.id =
-                `products-grid-${categoryId}-${subcategory.id}`;
-
-
             productsContainer.appendChild(
                 grid
             );
