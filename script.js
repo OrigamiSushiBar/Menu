@@ -3291,6 +3291,18 @@ const products = [
 
     {
         reference: "",
+        nameFR: "Boga Lim",
+        nameEN: "Boga Lim",
+        descriptionFR: "",
+        descriptionEN: "",
+        price: "2,500 DT",
+        image: "boissons/bogaL.jpg",
+        category: "boissons",
+        subcategory: "boisson",
+    },
+
+    {
+        reference: "",
         nameFR: "Apla",
         nameEN: "Apla",
         descriptionFR: "",
