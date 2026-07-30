@@ -1371,10 +1371,14 @@ margin-top:
 }
 
 /* Espace minimum titre/prix quand il n'y a pas de description
-   (le prix suit directement le nom du produit) */
-.product-name + .product-price {
+   (le prix reste collé en bas de la carte, mais ne se rapproche
+   jamais du titre en dessous de cette hauteur minimale) */
+.product-spacer {
 
-margin-top:
+flex:
+    1;
+
+min-height:
     50px;
 
 }
@@ -1722,9 +1726,9 @@ max-width: 600px
 }
 
 
-.product-name + .product-price {
+.product-spacer {
 
-    margin-top:
+    min-height:
         38px;
 
 }
