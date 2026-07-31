@@ -3920,48 +3920,117 @@ function createCategoryButton(
 }
 
 
-function renderSubcategories() {
+function showSubcategoryBar() {
 
-    subcategoryNavigation.innerHTML =
-        "";
+    subcategoryNavigation.classList.remove(
+        "hidden"
+    );
 
+    subcategoryNavigation.classList.add(
+        "is-collapsed"
+    );
+
+
+    
+
+    void subcategoryNavigation.offsetWidth;
+
+
+    subcategoryNavigation.classList.remove(
+        "is-collapsed"
+    );
+
+}
+
+
+function hideSubcategoryBar() {
 
     if (
-        currentCategory === "all"
-    ) {
-
-        subcategoryNavigation.classList.add(
+        subcategoryNavigation.classList.contains(
             "hidden"
-        );
+        )
+    ) {
 
         return;
 
     }
 
 
+    const onCollapseEnd =
+
+        event => {
+
+            if (
+                event.propertyName !== "transform"
+            ) {
+
+                return;
+
+            }
+
+            subcategoryNavigation.classList.add(
+                "hidden"
+            );
+
+            subcategoryNavigation.innerHTML =
+                "";
+
+            subcategoryNavigation.removeEventListener(
+                "transitionend",
+                onCollapseEnd
+            );
+
+        };
+
+
+    subcategoryNavigation.addEventListener(
+        "transitionend",
+        onCollapseEnd
+    );
+
+
+    subcategoryNavigation.classList.add(
+        "is-collapsed"
+    );
+
+}
+
+
+function renderSubcategories() {
+
     const subcategories =
 
-        subcategoriesOrder[
-            currentCategory
-        ] || [];
+        currentCategory === "all"
+
+            ? []
+
+            : (
+                subcategoriesOrder[
+                    currentCategory
+                ] || []
+            );
 
 
     if (
         subcategories.length === 0
     ) {
 
-        subcategoryNavigation.classList.add(
-            "hidden"
-        );
+        hideSubcategoryBar();
 
         return;
 
     }
 
 
-    subcategoryNavigation.classList.remove(
-        "hidden"
-    );
+    const wasHidden =
+
+        subcategoryNavigation.classList.contains(
+            "hidden"
+        );
+
+
+    subcategoryNavigation.innerHTML =
+        "";
 
 
     const accentColor =
@@ -4117,6 +4186,21 @@ function renderSubcategories() {
 
         }
     );
+
+
+    if (
+        wasHidden
+    ) {
+
+        showSubcategoryBar();
+
+    } else {
+
+        subcategoryNavigation.classList.remove(
+            "is-collapsed"
+        );
+
+    }
 
 }
 
