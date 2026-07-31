@@ -3662,6 +3662,11 @@ function setupEventListeners() {
             }
 
 
+            subcategoryNavigation.classList.remove(
+                "is-animating"
+            );
+
+
             if (
                 subcategoryNavigation.style.height === "0px"
             ) {
@@ -3959,6 +3964,10 @@ function showSubcategoryBar() {
         "hidden"
     );
 
+    subcategoryNavigation.classList.add(
+        "is-animating"
+    );
+
     subcategoryNavigation.style.height =
         "auto";
 
@@ -3974,17 +3983,24 @@ function showSubcategoryBar() {
         "0";
 
 
-    
+    requestAnimationFrame(
+        () => {
 
-    void subcategoryNavigation.offsetHeight;
+            requestAnimationFrame(
+                () => {
 
+                    subcategoryNavigation.style.height =
 
-    subcategoryNavigation.style.height =
+                        `${targetHeight}px`;
 
-        `${targetHeight}px`;
+                    subcategoryNavigation.style.opacity =
+                        "1";
 
-    subcategoryNavigation.style.opacity =
-        "1";
+                }
+            );
+
+        }
+    );
 
 }
 
@@ -4002,6 +4018,10 @@ function hideSubcategoryBar() {
     }
 
 
+    subcategoryNavigation.classList.add(
+        "is-animating"
+    );
+
     const currentHeight =
         subcategoryNavigation.scrollHeight;
 
@@ -4010,14 +4030,23 @@ function hideSubcategoryBar() {
         `${currentHeight}px`;
 
 
-    void subcategoryNavigation.offsetHeight;
+    requestAnimationFrame(
+        () => {
 
+            requestAnimationFrame(
+                () => {
 
-    subcategoryNavigation.style.height =
-        "0px";
+                    subcategoryNavigation.style.height =
+                        "0px";
 
-    subcategoryNavigation.style.opacity =
-        "0";
+                    subcategoryNavigation.style.opacity =
+                        "0";
+
+                }
+            );
+
+        }
+    );
 
 }
 
