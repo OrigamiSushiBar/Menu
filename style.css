@@ -898,9 +898,22 @@ scrollbar-width:
 opacity:
     1;
 
+will-change:
+    height;
+
 transition:
-    height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.3s ease;
+    height 0.35s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+
+}
+
+.subcategory-navigation.is-animating {
+
+background:
+    var(--white);
+
+backdrop-filter:
+    none;
 
 }
 
