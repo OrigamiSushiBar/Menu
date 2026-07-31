@@ -3943,15 +3943,30 @@ function createCategoryButton(
 
             renderSubcategories();
 
-            renderProducts();
-
             window.scrollTo({
 
                 top: 0,
 
-                behavior: "smooth"
+                behavior: "auto"
 
             });
+
+
+            
+
+            requestAnimationFrame(
+                () => {
+
+                    requestAnimationFrame(
+                        () => {
+
+                            renderProducts();
+
+                        }
+                    );
+
+                }
+            );
 
         }
     );
