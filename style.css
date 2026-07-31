@@ -889,32 +889,12 @@ backdrop-filter:
 scrollbar-width:
     none;
 
-opacity:
-    1;
-
-clip-path:
-    inset(0 0 0 0);
-
-transition:
-    clip-path 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.25s ease;
-
 }
 
 .subcategory-navigation::-webkit-scrollbar {
 
 display:
     none;
-
-}
-
-.subcategory-navigation.is-collapsed {
-
-clip-path:
-    inset(0 50% 0 50%);
-
-opacity:
-    0;
 
 }
 
