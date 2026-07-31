@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Origami Sushi Bar — Menu
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&family=Outfit:wght@600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    
+
+    <div
+        id="languageScreen"
+        class="language-screen"
+    >
+
+        <div class="language-box">
+
+            <img
+                src="logo.png"
+                alt="Origami Sushi Bar"
+                class="logo"
+            >
+
+
+            <h1>
+                Bienvenue
+            </h1>
+
+
+            <div class="language-buttons">
+
+                <button
+                    class="language-choice"
+                    data-language="fr"
+                >
+
+                    <span class="flag">🇫🇷</span>
+
+                    <span>
+                        Français
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="language-choice"
+                    data-language="en"
+                >
+
+                    <span class="flag">🇬🇧</span>
+
+                    <span>
+                        English
+                    </span>
+
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <div
+        id="menuApp"
+        class="menu-app hidden"
+    >
+
+
+        
+
+        <header class="site-header">
+
+
+            
+
+            <button
+                id="languageSwitcher"
+                class="language-switcher"
+            >
+
+                🇫🇷 FR
+
+            </button>
+
+
+            <div class="header-content">
+
+                <img
+                    src="logo.png"
+                    alt="Origami Sushi Bar"
+                    class="logo"
+                >
+
+
+                <h1 id="menuTitle">
+                    Menu
+                </h1>
+
+            </div>
+
+
+        </header>
+
+
+        
+
+        <div class="search-container">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Rechercher un plat..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    id="clearSearch"
+                    class="clear-search"
+                    aria-label="Effacer la recherche"
+                >
+
+                    ×
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <nav
+            id="categoryNavigation"
+            class="category-navigation"
+        >
+        </nav>
+
+
+        
+
+        <nav
+            id="subcategoryNavigation"
+            class="subcategory-navigation hidden"
+        >
+        </nav>
+
+
+        
+
+        <main
+            id="productsContainer"
+            class="products-container"
+        >
+        </main>
+
+
+        
+
+        <div
+            id="noResults"
+            class="no-results hidden"
+        >
+
+            <h2>
+                Aucun résultat
+            </h2>
+
+
+            <p>
+                Aucun produit ne correspond à votre recherche.
+            </p>
+
+        </div>
+
+
+        
+
+        <footer class="site-footer">
+
+            <img
+                src="logo.png"
+                alt="Origami Sushi Bar"
+                class="footer-logo"
+            >
+
+
+            <p>
+                ©
+                <span id="currentYear"></span>
+                Origami Sushi Bar
+            </p>
+
+        </footer>
+
+
+    </div>
+
+
+    
+
+    <button
+        id="scrollToTopBtn"
+        class="scroll-to-top is-hidden"
+        aria-label="Retour en haut"
+    >
+
+        <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+        >
+            <path
+                d="M12 19V5M12 5L5 12M12 5L19 12"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+            />
+        </svg>
+
+    </button>
+
+
+    
+
+    <script
+        src="script.js"
+    ></script>
+
+
+</body>
+
+</html>
