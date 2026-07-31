@@ -3737,13 +3737,7 @@ function showMenu() {
 
 function updateInterfaceTexts() {
 
-    menuTitle.textContent =
-
-        currentLanguage === "fr"
-
-            ? "Notre Menu"
-
-            : "Our Menu";
+    menuTitle.textContent = "Menu";
 
     searchInput.placeholder =
 
@@ -4222,6 +4216,8 @@ function getFilteredProducts() {
 
             const matchesCategory =
 
+                currentSearch.length > 0 ||
+
                 currentCategory === "all" ||
 
                 product.category ===
@@ -4324,7 +4320,8 @@ function renderProducts() {
 
 
     if (
-        currentCategory === "all"
+        currentCategory === "all" ||
+        currentSearch.length > 0
     ) {
 
         categoriesOrder.forEach(
