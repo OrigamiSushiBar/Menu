@@ -475,7 +475,7 @@ const products = [
 
     {
         reference: "2",
-        nameFR: "Tuna Tartare with Sesame & Ginger",
+        nameFR: "Tartare de Thon, Sésame & Gingembre",
         nameEN: "Tuna Tartare with Sesame & Ginger",
         descriptionFR: "Thon rouge mariné, graines de sésame et gingembre (selon arrivage)",
         descriptionEN: "Marinated bluefin tuna with sesame seeds and ginger (subject to availability)",
