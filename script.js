@@ -3165,8 +3165,8 @@ const products = [
 
     {
         reference: "172",
-        nameFR: "Bouteille d'Eau<br>(1 L)",
-        nameEN: "Water Bottle<br>(1 L)",
+        nameFR: "Eau Plate<br>(1 L)",
+        nameEN: "Still Water<br>(1 L)",
         descriptionFR: "Eau Minérale",
         descriptionEN: "Mineral Water",
         price: "3,000 DT",
@@ -3177,8 +3177,20 @@ const products = [
 
     {
         reference: "172",
-        nameFR: "Bouteille d'Eau<br>(0.5 L)",
-        nameEN: "Water Bottle<br>(0.5 L)",
+        nameFR: "Eau Gazeuse<br>(1 L)",
+        nameEN: "Sparkling Watere<br>(1 L)",
+        descriptionFR: "Eau Minérale Gazeuse",
+        descriptionEN: "Sparkling Mineral Water",
+        price: "3,000 DT",
+        image: "boissons/garci.jpg",
+        category: "boissons",
+        subcategory: "boisson",
+    },
+
+    {
+        reference: "172",
+        nameFR: "Eau Plate<br>(0.5 L)",
+        nameEN: "Still Water<br>(0.5 L)",
         descriptionFR: "Eau Minérale",
         descriptionEN: "Mineral Water",
         price: "2,000 DT",
