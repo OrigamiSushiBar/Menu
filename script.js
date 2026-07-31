@@ -3961,7 +3961,7 @@ function hideSubcategoryBar() {
         event => {
 
             if (
-                event.propertyName !== "transform"
+                event.propertyName !== "clip-path"
             ) {
 
                 return;
