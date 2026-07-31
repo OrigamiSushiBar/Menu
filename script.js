@@ -3648,6 +3648,39 @@ function setupEventListeners() {
         }
     );
 
+
+    subcategoryNavigation.addEventListener(
+        "transitionend",
+        event => {
+
+            if (
+                event.propertyName !== "height"
+            ) {
+
+                return;
+
+            }
+
+
+            if (
+                subcategoryNavigation.style.height === "0px"
+            ) {
+
+                subcategoryNavigation.classList.add(
+                    "hidden"
+                );
+
+                subcategoryNavigation.innerHTML =
+                    "";
+
+                subcategoryNavigation.style.height =
+                    "";
+
+            }
+
+        }
+    );
+
 }
 
 
@@ -3926,19 +3959,32 @@ function showSubcategoryBar() {
         "hidden"
     );
 
-    subcategoryNavigation.classList.add(
-        "is-collapsed"
-    );
+    subcategoryNavigation.style.height =
+        "auto";
+
+
+    const targetHeight =
+        subcategoryNavigation.scrollHeight;
+
+
+    subcategoryNavigation.style.height =
+        "0px";
+
+    subcategoryNavigation.style.opacity =
+        "0";
 
 
     
 
-    void subcategoryNavigation.offsetWidth;
+    void subcategoryNavigation.offsetHeight;
 
 
-    subcategoryNavigation.classList.remove(
-        "is-collapsed"
-    );
+    subcategoryNavigation.style.height =
+
+        `${targetHeight}px`;
+
+    subcategoryNavigation.style.opacity =
+        "1";
 
 }
 
@@ -3956,42 +4002,22 @@ function hideSubcategoryBar() {
     }
 
 
-    const onCollapseEnd =
+    const currentHeight =
+        subcategoryNavigation.scrollHeight;
 
-        event => {
+    subcategoryNavigation.style.height =
 
-            if (
-                event.propertyName !== "clip-path"
-            ) {
-
-                return;
-
-            }
-
-            subcategoryNavigation.classList.add(
-                "hidden"
-            );
-
-            subcategoryNavigation.innerHTML =
-                "";
-
-            subcategoryNavigation.removeEventListener(
-                "transitionend",
-                onCollapseEnd
-            );
-
-        };
+        `${currentHeight}px`;
 
 
-    subcategoryNavigation.addEventListener(
-        "transitionend",
-        onCollapseEnd
-    );
+    void subcategoryNavigation.offsetHeight;
 
 
-    subcategoryNavigation.classList.add(
-        "is-collapsed"
-    );
+    subcategoryNavigation.style.height =
+        "0px";
+
+    subcategoryNavigation.style.opacity =
+        "0";
 
 }
 
@@ -4196,9 +4222,11 @@ function renderSubcategories() {
 
     } else {
 
-        subcategoryNavigation.classList.remove(
-            "is-collapsed"
-        );
+        subcategoryNavigation.style.height =
+            "auto";
+
+        subcategoryNavigation.style.opacity =
+            "1";
 
     }
 
