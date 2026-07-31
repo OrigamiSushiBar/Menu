@@ -560,7 +560,7 @@ font-weight:
     600;
 
 font-size:
-    30px;
+    36px;
 
 margin-bottom:
     0;
@@ -1544,7 +1544,7 @@ max-width: 600px
         50%;
 
     font-size:
-        25px;
+        29px;
 
 }
 
@@ -1699,6 +1699,16 @@ max-width: 600px
 
     transform: translateY(0);
 
+    -webkit-tap-highlight-color: transparent;
+
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;
+
+    user-select: none;
+
+    outline: none;
+
     transition:
         background-color 0.3s ease,
         opacity 0.3s ease,
@@ -1728,6 +1738,10 @@ max-width: 600px
 .scroll-to-top svg {
 
     display: block;
+
+    -webkit-tap-highlight-color: transparent;
+
+    pointer-events: none;
 
 }
 
