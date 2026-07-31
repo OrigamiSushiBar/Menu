@@ -889,18 +889,15 @@ backdrop-filter:
 scrollbar-width:
     none;
 
-transform-origin:
-    center;
-
-transform:
-    scaleX(1);
-
 opacity:
     1;
 
+clip-path:
+    inset(0 0 0 0);
+
 transition:
-    transform 0.4s cubic-bezier(0.34, 1.2, 0.4, 1),
-    opacity 0.3s ease;
+    clip-path 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease;
 
 }
 
@@ -913,8 +910,8 @@ display:
 
 .subcategory-navigation.is-collapsed {
 
-transform:
-    scaleX(0.02);
+clip-path:
+    inset(0 50% 0 50%);
 
 opacity:
     0;
