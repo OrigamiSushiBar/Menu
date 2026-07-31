@@ -3475,6 +3475,11 @@ const subcategoryNavigation =
         "subcategoryNavigation"
     );
 
+const subcategoryInner =
+    document.getElementById(
+        "subcategoryInner"
+    );
+
 const productsContainer =
     document.getElementById(
         "productsContainer"
@@ -3654,7 +3659,7 @@ function setupEventListeners() {
         event => {
 
             if (
-                event.propertyName !== "height"
+                event.propertyName !== "grid-template-rows"
             ) {
 
                 return;
@@ -3668,17 +3673,16 @@ function setupEventListeners() {
 
 
             if (
-                subcategoryNavigation.style.height === "0px"
+                !subcategoryNavigation.classList.contains(
+                    "is-open"
+                )
             ) {
 
                 subcategoryNavigation.classList.add(
                     "hidden"
                 );
 
-                subcategoryNavigation.innerHTML =
-                    "";
-
-                subcategoryNavigation.style.height =
+                subcategoryInner.innerHTML =
                     "";
 
             }
@@ -3968,35 +3972,17 @@ function showSubcategoryBar() {
         "is-animating"
     );
 
-    subcategoryNavigation.style.height =
-        "auto";
 
+    
 
-    const targetHeight =
-        subcategoryNavigation.scrollHeight;
-
-
-    subcategoryNavigation.style.height =
-        "0px";
-
-    subcategoryNavigation.style.opacity =
-        "0";
+    void subcategoryNavigation.offsetHeight;
 
 
     requestAnimationFrame(
         () => {
 
-            requestAnimationFrame(
-                () => {
-
-                    subcategoryNavigation.style.height =
-
-                        `${targetHeight}px`;
-
-                    subcategoryNavigation.style.opacity =
-                        "1";
-
-                }
+            subcategoryNavigation.classList.add(
+                "is-open"
             );
 
         }
@@ -4022,30 +4008,8 @@ function hideSubcategoryBar() {
         "is-animating"
     );
 
-    const currentHeight =
-        subcategoryNavigation.scrollHeight;
-
-    subcategoryNavigation.style.height =
-
-        `${currentHeight}px`;
-
-
-    requestAnimationFrame(
-        () => {
-
-            requestAnimationFrame(
-                () => {
-
-                    subcategoryNavigation.style.height =
-                        "0px";
-
-                    subcategoryNavigation.style.opacity =
-                        "0";
-
-                }
-            );
-
-        }
+    subcategoryNavigation.classList.remove(
+        "is-open"
     );
 
 }
@@ -4084,7 +4048,7 @@ function renderSubcategories() {
         );
 
 
-    subcategoryNavigation.innerHTML =
+    subcategoryInner.innerHTML =
         "";
 
 
@@ -4148,7 +4112,7 @@ function renderSubcategories() {
     );
 
 
-    subcategoryNavigation.appendChild(
+    subcategoryInner.appendChild(
         allButton
     );
 
@@ -4235,7 +4199,7 @@ function renderSubcategories() {
             );
 
 
-            subcategoryNavigation.appendChild(
+            subcategoryInner.appendChild(
                 button
             );
 
@@ -4248,14 +4212,6 @@ function renderSubcategories() {
     ) {
 
         showSubcategoryBar();
-
-    } else {
-
-        subcategoryNavigation.style.height =
-            "auto";
-
-        subcategoryNavigation.style.opacity =
-            "1";
 
     }
 
