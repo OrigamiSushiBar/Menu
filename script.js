@@ -308,7 +308,7 @@ const products = [
     {
         reference: "8",
         nameFR: "Soupe Miso",
-        nameEN: "Miso soup",
+        nameEN: "Miso Soup",
         descriptionFR: "Bouillon Traditionnel Japonais à Base de Pâte Miso",
         descriptionEN: "Traditional Japanese Broth Made from Miso Paste",
         price: "8,000 DT",
